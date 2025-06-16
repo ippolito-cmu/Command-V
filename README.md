@@ -1,16 +1,20 @@
 # Command-V: Pasting LLM Behaviors via Activation Profiles
 
-**⌘V** enables **zero-training behavioral transfer across LLM architectures** using activation profiles. 
-Transfer jailbreaking, anti-jailbreaking and reasoning behaviors across different models with **little data and no backpropagation**.
+**⌘V** lets you take a behavior (like refusal suppression, jailbreaking resistance, or chain-of-thought reasoning) learned by one LLM and transfer it to one  with completely different size or architecture—no backpropagation required.
 
 ![PDF Page 1](commandv/Overview.png)
+### How it works:
+1. **Profile activations** on both models using a small set of prompts
+2. **Create converters** that map between model representation spaces
+3. **Transfer behaviors** by applying the donor model's learned interventions to the recipient
 
 
-## ⌘ Key Features
 
-- **Zero Fine-tuning**: No backpropagation. Pure activation-based transfer without backpropagation
-- **Fast**: Minimal computational overhead during inference
-- **Cross-Family**: In certain conditions, works between Llama, Qwen, Gemma, and other model families
+## ⌘V Highlights
+
+- **Low Resource**: No backpropagation. No expert data. Low GPU memory usage. 
+- **Fast**: Minutes to set up, not hours.
+- **Cross-Family**: In certain conditions, works between Llama, Qwen, and other model families
 
 
 ## 🪧 Demo
