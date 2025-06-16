@@ -1,0 +1,1 @@
+train --model_name=meta-llama/Llama-3.2-3B-Instruct --dataset_name=allenai/wildjailbreak --layers=0,2,4,6,8,10,12,14,16,18,20,22,24,26 --output_dir=./reft_to_share --max_examples=100000 --intervention_type NodireftIntervention --positions l1

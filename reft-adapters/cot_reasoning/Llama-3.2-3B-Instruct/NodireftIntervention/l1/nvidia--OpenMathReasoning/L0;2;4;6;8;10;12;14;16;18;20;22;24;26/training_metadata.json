@@ -1,0 +1,53 @@
+{
+  "model_name": "meta-llama/Llama-3.2-3B-Instruct",
+  "dataset_name": "nvidia/OpenMathReasoning",
+  "intervention_type": "NodireftIntervention",
+  "layers": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26
+  ],
+  "lora_dim": 8,
+  "epochs": 6.0,
+  "learning_rate": 0.0009,
+  "batch_size": 4,
+  "max_examples": -1,
+  "positions": "l1",
+  "warmup_ratio": 0.1,
+  "share_weight": false,
+  "dropout": 0.05,
+  "weight_decay": 0.0,
+  "training_start": "2025-05-09 14:58:46",
+  "training_end": "2025-05-09 15:12:48",
+  "training_duration_seconds": 842.4743502140045,
+  "training_duration_formatted": "0h 14m 2.47s",
+  "device": "cuda",
+  "total_steps": 3000,
+  "step_timestamps": {
+    "50": 1746802741.7298448,
+    "100": 1746802758.614881,
+    "200": 1746802789.1411302,
+    "400": 1746802847.1825032,
+    "800": 1746802960.3806183,
+    "1600": 1746803182.4707391
+  },
+  "checkpoint_durations": {
+    "50": 15.337244033813477,
+    "100": 32.22228026390076,
+    "200": 62.7485294342041,
+    "400": 120.78990244865417,
+    "800": 233.9880175590515,
+    "1600": 456.07813835144043
+  }
+}

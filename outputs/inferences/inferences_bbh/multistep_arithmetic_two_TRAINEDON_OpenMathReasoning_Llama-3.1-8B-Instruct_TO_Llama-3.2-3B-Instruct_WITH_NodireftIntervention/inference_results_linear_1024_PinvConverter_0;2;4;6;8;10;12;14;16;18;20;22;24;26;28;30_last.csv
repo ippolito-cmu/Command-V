@@ -1,0 +1,4258 @@
+prompt,baseline,baseline_with_reppenal,intervened,intervened_with_reppenal,timestamp
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 + 2 + 9 * 5) - (-2 + -4 + -4 * -7))","{""ANSWER"": 41}",,"Let's break down the math expression step by step:
+
+1. Multiply 9 and 5: 9 * 5 = 45
+2. Add -1, 2, and 45: -1 + 2 + 45 = 46
+3. Multiply -4 and -7: -4 * -7 = 28
+4. Add -2, -4, and 28: -2 + -4 + 28 = 22
+5. Subtract 22 from 46: 46 - 22 = 24
+
+So, the final answer is:
+
+{""ANSWER"": 24}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 * -5 - 6 + -2) - (-8 - -6 * -3 * 1))","{""ANSWER"": 59}",," Let's break down the expression step by step:
+
+1. Multiply -9 and -5: (-9 * -5) = 45
+2. Add -6: 45 - 6 = 39
+3. Add -2: 39 - 2 = 37
+4. Multiply -6 and -3: (-6 * -3) = 18
+5. Multiply 18 by 1: 18 * 1 = 18
+6. Subtract 18 from -8: -8 - 18 = -26
+7. Subtract 37 from 26: 26 - 37 = -11
+
+ANSWER: -11",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 * -3 * 6 + -5) - (-2 + -7 - 7 - -7))","{""ANSWER"": -8}",," Let's break down the expression step by step:
+
+1. Multiply 3 and -3: 3 * -3 = -9
+2. Multiply -9 by 6: -9 * 6 = -54
+3. Add -5 to -54: -54 + -5 = -59
+4. Add -2, -7, -7, and -7: -2 + -7 + -7 + -7 = -24
+5. Subtract -24 from -59: -59 - (-24) = -59 + 24 = -35
+
+So, the final result is -35.
+
+Here's the JSON response:
+
+{""ANSWER"": -35}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((6 * -6 * 8 * 1) * (-1 * 7 * -6 + -2))","{""ANSWER"": -336}",,"Let's break down the given math expression step by step:
+
+1. Multiply 6, -6, 8, and 1: 
+   (6 * -6 * 8 * 1) = (-6 * 8 * 1) * 6 = (-48) * 6 = -288
+
+2. Multiply -1, 7, and -6: 
+   (-1 * 7 * -6) = 42
+
+3. Add -2 to the result of step 2:
+   42 + (-2) = 40
+
+4. Multiply the result of step 1 by the result of step 3:
+   (-288) * 40 = -11520
+
+So, the final answer in JSON format is:
+{""ANSWER"": -11520}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 - -4 + 9 + 0) + (1 + -4 - -9 * 6))","{""ANSWER"": 19}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -6 - (-4) = -6 + 4 = -2
+   -2 + 9 = 7
+   7 + 0 = 7
+
+   So, the first part of the expression is 7.
+
+2. Evaluate the second part of the expression:
+   1 + (-4) = 1 - 4 = -3
+   -3 - (-9 * 6) = -3 + 54 = 51
+
+   So, the second part of the expression is 51.
+
+3. Now, add the two parts together:
+   7 + 51 = 58
+
+Therefore, the final answer is:
+
+{""ANSWER"": 58}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 - 4 * 2 - 6) + (1 + -2 * 1 * 7))","{""ANSWER"": -25}",," Let's break down the expression step by step.
+
+1. Multiply 4 and 2: 4 * 2 = 8
+2. Subtract 8 from -6: -6 - 8 = -14
+3. Subtract 6 from -14: -14 - 6 = -20
+4. Multiply -2 and 1 and 7: -2 * 1 * 7 = -14
+5. Add 1 and -14: 1 - 14 = -13
+6. Add -20 and -13: -20 + (-13) = -33
+
+So, the final result is -33.
+
+ {""ANSWER"": -33}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 - 0 + 1 - 4) - (-3 * 1 - -6 * -8))","{""ANSWER"": 16}",,"Let's break down the equation step by step:
+
+(1 - 0 + 1 - 4) = 1 - 4 + 1 = -2
+
+-3 * 1 = -3
+-6 * -8 = 48
+
+(-3 * 1) + (-6 * -8) = -3 + 48 = 45
+
+Now, let's put it all together:
+
+((-2) - 45) = -47
+
+So, the answer is:
+
+{""ANSWER"": -47}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 + 7 * -9 + -5) + (3 + -5 * 2 - 6))","{""ANSWER"": -12}",,"Let's solve the math expression step by step.
+
+1. First, calculate the multiplication operations:
+   - 7 * -9 = -63
+   - -5 * 2 = -10
+
+2. Now, replace the multiplication operations with their results in the original expression:
+   - (1 + -63 + -5) + (3 + -10 - 6)
+
+3. Next, calculate the addition and subtraction operations from left to right:
+   - (1 + -63) = -62
+   - -62 + -5 = -67
+   - (3 + -10) = -7
+   - -7 - 6 = -13
+
+4. Now, add the two results together:
+   - -67 + -13 = -80
+
+So, the final answer is -80.
+
+In JSON format: {""ANSWER"": -80}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 * -9 + 8 * -3) * (5 + -7 - 4 * -5))","{""ANSWER"": 264}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -7 * -9 = 63
+   8 * -3 = -24
+   5 + -7 - 4 * -5 = 5 - 7 + 20 = 18
+
+2. Now, multiply the results:
+   63 * 18 = 1134
+
+So, the final answer is:
+
+ {""ANSWER"": 1134}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 - 1 * 5 * -5) - (6 + -3 - -1 * -7))","{""ANSWER"": -2}",,"Let's solve the given math expression step by step.
+
+First, calculate the multiplication:
+1. 1 * 5 * -5 = -25
+2. -3 * -7 = 21
+
+Now, substitute the values back into the expression:
+((-9 - (-25)) - (6 + 21))
+
+Next, calculate the additions and subtractions inside the parentheses:
+1. -9 - (-25) = -9 + 25 = 16
+2. 6 + 21 = 27
+
+Now, substitute the values back into the expression:
+(16 - 27)
+
+Finally, calculate the subtraction:
+16 - 27 = -11
+
+So, the final answer is:
+{""ANSWER"": -11}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((6 - 0 * 5 + -3) * (6 - -7 + -2 - -7))","{""ANSWER"": 336}",,"Let's break down the math step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - 0 * 5 = 0
+   - 6 - 0 * 5 = 6 - 0 = 6
+   - -3 + 6 = 3
+   - 6 - 3 = 3
+
+   -7 + -2 = -9
+   - -7 + -9 = -16
+
+2. Now multiply the two results:
+   - 3 * -16 = -48
+
+So, the answer is: {""ANSWER"": -48}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((2 - -2 + -7 * 8) * (-7 * -8 * 3 - -2))","{""ANSWER"": -2744}",,"Let's solve the given math expression step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Evaluate the expressions inside the parentheses:
+   -7 * -8 * 3 = 168
+   - -2 = 2
+   So, the expression becomes: (2 - (-2 + (-7 * 8)) * (168 - (-2)))
+
+2. Now, evaluate the expressions inside the innermost parentheses:
+   -7 * 8 = -56
+   2 + (-56) = -54
+   168 - (-2) = 170
+   So, the expression becomes: (2 - (-54) * 170)
+
+3. Now, evaluate the expressions inside the parentheses:
+   - (-54) = 54
+   2 - 54 = -52
+   -52 * 170 = -8780
+
+4. Now, the expression becomes: (-8780)
+
+So, the final answer is:
+
+{""ANSWER"": -8780}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 - 2 + -2 * 6) * (8 + -6 + -8 + -1))","{""ANSWER"": -16}",,"Let's solve the expression step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply -2 and 6: -2 * 6 = -12
+2. Subtract 12 from 8: 8 - 12 = -4
+3. Add -4 to -4: -4 + -4 = -8
+4. Add -8, -6, -8, and -1: -8 + -6 + -8 + -1 = -23
+
+Now, multiply -4 by -23:
+
+-4 * -23 = 92
+
+So, the final answer is:
+
+{""ANSWER"": 92}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 + -9 - -6 + -4) * (-1 - -6 + -4 - 3))","{""ANSWER"": 144}",," Let's solve the given math expression step by step:
+
+1. First, solve the expressions inside the parentheses:
+   (-6 + -9 - -6 + -4) = -6 + (-9) - (-6) + (-4) = -6 - 9 + 6 - 4 = -13
+   (-1 - -6 + -4 - 3) = -1 + 6 - 4 - 3 = 2 - 7 = -5
+
+2. Then, multiply the results:
+   (-13) * (-5) = 65
+
+So, the result of the expression is 65. 
+
+ {""ANSWER"": 65}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 - 4 * -8 + 8) * (4 + 3 - 9 * 7))","{""ANSWER"": -30}",," Let's break down the equation step by step:
+
+1. Multiply 4 and -8: 4 * -8 = -32
+2. Subtract -32 from -5: -5 - (-32) = -5 + 32 = 27
+3. Add 8 to 27: 27 + 8 = 35
+4. Multiply 9 and 7: 9 * 7 = 63
+5. Subtract 63 from 4: 4 - 63 = -59
+6. Add 3 to -59: -59 + 3 = -56
+7. Multiply 35 and -56: 35 * -56 = -1960
+
+The final answer is: {""ANSWER"": -1960}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 * -7 * -6 + 9) * (-2 - 8 + -5 + 7))","{""ANSWER"": -80}",,"Let's break it down step by step:
+
+1. Calculate the expressions inside the parentheses:
+   -5 * -7 * -6 = -210
+   -2 - 8 + -5 + 7 = -8
+
+2. Now, add 9 to -210:
+   -210 + 9 = -201
+
+3. Multiply the result by -8:
+   -201 * -8 = 1608
+
+So, the answer is:
+
+{""ANSWER"": 1608}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 + 9 - 4 - -9) + (8 + 7 - 6 * 1))","{""ANSWER"": 14}",,"Let's solve the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (8 + 9 - 4 - (-9)) = (8 + 9 - 4 + 9) = 22
+   (8 + 7 - 6 * 1) = (8 + 7 - 6) = 9
+
+2. Now, add the results:
+   22 + 9 = 31
+
+So, the answer is:
+
+{""ANSWER"": 31}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 * -1 + -6 * -3) + (-1 + -8 - 5 + 3))","{""ANSWER"": 17}",,"Let's break down the equation step by step:
+
+1. Multiply 5 and -1: 5 * -1 = -5
+2. Multiply -6 and -3: -6 * -3 = 18
+3. Add -5 and 18: -5 + 18 = 13
+4. Multiply -1, -8, and 3: (-1) * (-8) * 3 = 24
+5. Add 13 and 24: 13 + 24 = 37
+
+So the final answer is:
+
+{""ANSWER"": 37}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 - 6 + 7 - 7) - (5 + 3 - 9 * -8))","{""ANSWER"": -4}",," Let's solve the math problem step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -6 - 6 + 7 - 7 = -12
+   5 + 3 - 9 * -8 = 5 + 3 + 72 = 80
+
+2. Now subtract the second result from the first:
+   -12 - 80 = -92
+
+So, the answer is -92. Here's the response in JSON format:
+
+{""ANSWER"": -92}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((7 - 4 + -3 * 4) - (5 + -8 - 6 + -5))","{""ANSWER"": -4}",,"Let's solve the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - (7 - 4 + -3 * 4) = (7 - 4 + -12) = (3 - 12) = -9
+   - (5 + -8 - 6 + -5) = (5 - 8 - 6 - 5) = (-14)
+
+2. Now, subtract the second result from the first:
+   - (-9) - (-14) = -9 + 14 = 5
+
+So, the final answer is: {""ANSWER"": 5}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 * -1 - 2 + -2) + (9 - 4 + -1 - 7))","{""ANSWER"": 12}",,"Let's break down the given math expression step by step:
+
+((-6 * -1 - 2 + -2) + (9 - 4 + -1 - 7))
+
+1. Multiply -6 and -1: (-6 * -1) = 6
+2. Add -2: 6 - 2 = 4
+3. Add -2: 4 - 2 = 2
+4. Multiply 9 and -4: (9 - 4) = 5, then add -1: 5 - 1 = 4, then subtract 7: 4 - 7 = -3
+5. Add the results of step 2 and step 4: 2 + (-3) = -1
+
+The final answer is: {""ANSWER"": -1}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 * -6 + 6 * 1) - (-3 * 7 * 0 - 7))","{""ANSWER"": 8}",," Let's solve the given math expression step by step:
+
+((8 * -6 + 6 * 1) - (-3 * 7 * 0 - 7))
+
+= ((8 * -6) + (6 * 1)) - (-3 * 7 * 0 - 7)
+
+= (-48 + 6) - (-21 - 7)
+
+= -42 - (-28)
+
+= -42 + 28
+
+= -14
+
+So, the answer is -14.
+
+Here is the response in the requested format:
+
+{""ANSWER"": -14}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 - 8 - -7 * -2) - (-9 - 5 + 7 + 1))","{""ANSWER"": 16}",,"Let's solve the math expression step by step.
+
+First, follow the order of operations (PEMDAS):
+
+1. Multiply -7 and -2: -7 * -2 = 14
+2. Add and subtract from left to right inside the first parentheses: 
+   -6 - 8 = -14
+   -14 + 14 = 0
+3. Add and subtract from left to right inside the second parentheses: 
+   -9 - 5 = -14
+   -14 + 7 = -7
+   -7 + 1 = -6
+
+Now, subtract the second parentheses from the first: 
+0 - (-6) = 6
+
+So, the final result is 6.
+
+Here's the JSON response:
+
+{""ANSWER"": 6}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 - 7 - -8 * 3) + (-7 - -2 + -3 * 6))","{""ANSWER"": -12}",,"Let's solve the math equation step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Evaluate the expressions inside the parentheses:
+   -8 * 3 = -24
+   -7 - -2 = -5
+   -3 * 6 = -18
+
+2. Now the equation becomes:
+   (1 - 7 - (-24)) + (-5 - 18)
+
+3. Next, evaluate the expressions inside the parentheses:
+   1 - 7 - (-24) = 1 - 7 + 24 = 18
+   -5 - 18 = -23
+
+4. Finally, add the two results:
+   18 + (-23) = -5
+
+So, the answer is:
+
+{""ANSWER"": -5}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 * -8 - -5 * -9) * (2 - -7 * 6 - 4))","{""ANSWER"": -30}",,"Let's break down the math expression:
+
+(5 * -8 - -5 * -9) * (2 - -7 * 6 - 4)
+
+First, calculate the expressions inside the parentheses:
+
+(5 * -8) = -40
+(-5 * -9) = 45
+(-7 * 6) = -42
+(-7 * 6 - 4) = -42 - 4 = -46
+
+Now, put these results back into the equation:
+
+(-40 - 45) * (-46)
+
+-85 * -46
+
+= 3910
+
+So, the answer is:
+{""ANSWER"": 3910}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((6 + 1 - 4 - 3) - (-4 * -6 * -3 + 1))","{""ANSWER"": 0}",,"Let's solve the given math expression step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Evaluate expressions inside parentheses:
+   -6 * -6 * -3 = -216
+
+2. Now, the expression becomes:
+   (6 + 1 - 4 - 3) - (-4 * -216 + 1)
+
+3. Evaluate expressions inside parentheses:
+   -4 * -216 = 864
+
+4. Now, the expression becomes:
+   (6 + 1 - 4 - 3) - (864 + 1)
+
+5. Evaluate expressions inside parentheses:
+   6 + 1 - 4 - 3 = 0
+
+6. Now, the expression becomes:
+   0 - (864 + 1)
+
+7. Evaluate the expression inside the parentheses:
+   864 + 1 = 865
+
+8. Now, the expression becomes:
+   0 - 865
+
+9. Finally, evaluate the expression:
+   0 - 865 = -865
+
+So, the final answer is:
+
+{""ANSWER"": -865}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 - -9 + 0 + -3) + (-2 - -1 - 1 + 2))","{""ANSWER"": 4}",,"Let's solve the given math expression step by step.
+
+First, let's simplify the expressions within the parentheses:
+
+(-9 - -9 + 0 + -3) 
+= (-9 + 9 + 0 + -3) 
+= (0 + -3) 
+= -3
+
+(-2 - -1 - 1 + 2) 
+= (-2 + 1 - 1 + 2) 
+= (1 - 1) 
+= 0
+
+Now, let's add the two simplified expressions:
+
+(-3) + 0 
+= -3
+
+So, the final answer is:
+
+{""ANSWER"": -3}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((9 - 3 + 2 + -1) - (5 - -1 - -6 * -4))","{""ANSWER"": 8}",,"Let's solve the math question step by step.
+
+1. Evaluate the expressions inside the parentheses:
+   (9 - 3 + 2 - 1) = 7
+   (5 + 1 - 6 * -4) = (5 + 1 - 6 * -4)
+   To calculate -6 * -4, we need to follow the order of operations (PEMDAS):
+   -6 * -4 = 24
+   Now we can calculate (5 + 1 - 24) = -18
+
+2. Now subtract the second result from the first:
+   7 - (-18) = 7 + 18 = 25
+
+So, the answer is: {""ANSWER"": 25}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 + 6 * -2 + 4) * (-4 * 5 + 2 - 8))","{""ANSWER"": -24}",,"Let's solve the expression step by step.
+
+1. First, solve the expressions inside the parentheses:
+   - 6 * -2 = -12
+   - -8 + (-12) + 4 = -16
+   - -4 * 5 = -20
+   - -20 + 2 - 8 = -26
+
+2. Now, multiply the results:
+   - (-16) * (-26) = 416
+
+So, the final result is 416.
+
+ {""ANSWER"": 416}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 + -1 * 7 * -6) - (-7 * -1 + -5 - -3))","{""ANSWER"": 49}",," Let's break down the equation step by step:
+
+1. Multiply -1 and 7: -1 * 7 = -7
+2. Multiply -7 and -6: -7 * -6 = 42
+3. Add 3 and 42: 3 + 42 = 45
+4. Multiply -7 and -1: -7 * -1 = 7
+5. Add -5 and -3: -5 + -3 = -8
+6. Add 7 and -8: 7 + -8 = -1
+7. Subtract -1 from 45: 45 - (-1) = 45 + 1 = 46
+
+The answer is: {""ANSWER"": 46}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 - 3 - -3 + -2) + (8 - 2 + -8 - -6))","{""ANSWER"": 4}",," Let's simplify the expression step by step:
+
+(3 - 3 - -3 + -2) 
+First, simplify the terms with negative signs: 
+3 - 3 - (-3) + (-2) 
+= 3 - 3 + 3 - 2 
+= 1 
+
+Now, add this result to the second part of the expression:
+(1) + (8 - 2 + -8 - -6) 
+First, simplify the terms with negative signs: 
+8 - 2 - 8 + 6 
+= 4 
+
+Now, add 1 and 4:
+1 + 4 
+= 5 
+
+So, the final result is 5.
+
+ {""ANSWER"": 5}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-2 + -9 - -2 * 2) - (6 * 1 * -2 * -1))","{""ANSWER"": 15}",,"Let's solve the given math expression step by step.
+
+1. Multiply -2 and 2: -2 * 2 = -4
+2. Add -2 and -4: -2 + -4 = -6
+3. Multiply 6 and 1: 6 * 1 = 6
+4. Multiply -2 and -1: -2 * -1 = 2
+5. Multiply 6 and 2: 6 * 2 = 12
+6. Subtract 12 from -6: -6 - 12 = -18
+7. Subtract -18 from -18 (since subtracting a negative is the same as adding): -18 - (-18) = -18 + 18 = 0
+
+So, the final result is 0.
+
+Here's the JSON response:
+
+{""ANSWER"": 0}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 + -2 * 1 - 6) + (3 + 9 * 7 + -7))","{""ANSWER"": -4}",,"Let's solve the math expression step by step.
+
+1. Multiply -2 and 1: -2 * 1 = -2
+2. Add -7 and -2: -7 + (-2) = -9
+3. Add -6: -9 + (-6) = -15
+4. Multiply 9 and 7: 9 * 7 = 63
+5. Add 3 and 63: 3 + 63 = 66
+6. Add -7: 66 + (-7) = 59
+
+Now, let's combine the two parts of the expression:
+(-15) + 59 = 44
+
+So, the final answer is: {""ANSWER"": 44}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((4 + 7 * 4 - -5) - (-4 - 1 - -4 - 4))","{""ANSWER"": 24}",," Let's break it down step by step:
+
+1. 7 * 4 = 28
+2. 4 + 28 - 5 = 27
+3. -4 - 1 - 4 = -9
+4. -9 - 4 = -13
+5. 27 - (-13) = 27 + 13 = 40
+
+So, the answer is 40.
+
+Here is the response in the requested format:
+
+{""ANSWER"": 40}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 - 6 * 0 - -7) * (6 * 0 + 6 - -3))","{""ANSWER"": 84}",," Let's break down the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - 1 - 6 * 0 - -7: 
+     - 6 * 0 = 0
+     - -7 = -7 (negating the negative sign)
+     - So, 1 - 0 - 7 = -6
+   - 6 * 0 + 6 - -3: 
+     - 6 * 0 = 0
+     - -3 = -3 (negating the negative sign)
+     - So, 0 + 6 - 3 = 3
+
+2. Multiply the results of the two expressions:
+   - (-6) * 3 = -18
+
+Therefore, the final answer is:
+
+ {""ANSWER"": -18}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 + -7 + -2 - 7) * (6 - 1 - -1 * 5))","{""ANSWER"": -27}",," Let's break down the problem step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (-1 + -7 + -2 - 7) = -17
+   (6 - 1 - -1 * 5) = (6 - 1 + 5) = 10
+
+2. Multiply the results:
+   (-17) * 10 = -170
+
+So, the final answer is:
+
+ {""ANSWER"": -170}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 + 6 - -5 + -6) + (-4 + -6 - 3 - 7))","{""ANSWER"": -17}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -5 + 6 = 1
+   -(-5) = 5
+   5 + (-6) = -1
+   -(-4) = 4
+   -6 - 3 - 7 = -16
+   4 + (-16) = -12
+
+2. Now, add the results:
+   -1 + (-12) = -13
+
+So, the final answer is:
+
+{""ANSWER"": -13}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((0 - -1 + -1 + -3) - (-3 * 0 * 8 + 6))","{""ANSWER"": 5}",,"Let's break down the equation step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - (-3 * 0 * 8) = 0 (since any number multiplied by 0 is 0)
+   - So, the equation becomes: (0 - -1 + -1 + -3) - (0 + 6)
+
+2. Evaluate the expressions inside the first set of parentheses:
+   - 0 - -1 = 1
+   - 1 + -1 = 0
+   - 0 + -3 = -3
+
+3. Now, evaluate the expressions inside the second set of parentheses:
+   - 0 + 6 = 6
+
+4. Finally, subtract the second result from the first:
+   - (-3) - 6 = -9
+
+Therefore, the answer is:
+
+ {""ANSWER"": -9}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 + -6 * 9 - 7) + (8 + 2 * -9 * -7))","{""ANSWER"": -5}",,"Let's solve the expression step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply -6 and 9: -6 * 9 = -54
+2. Add -8 and -54: -8 + (-54) = -62
+3. Subtract 7: -62 - 7 = -69
+4. Multiply 2 and -9: 2 * -9 = -18
+5. Multiply -18 and -7: -18 * -7 = 126
+6. Add 8 and 126: 8 + 126 = 134
+7. Add -69 and 134: -69 + 134 = 65
+
+So, the final result is 65.
+
+Here is the JSON response:
+{""ANSWER"": 65}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-3 * 0 * 4 - -7) + (-9 * -6 - -8 + 1))","{""ANSWER"": 80}",,"Let's break down the expression step by step.
+
+1. Multiply -3 and 0: -3 * 0 = 0
+2. Multiply 0 by 4: 0 * 4 = 0
+3. Subtract -7: 0 - (-7) = 0 + 7 = 7
+4. Multiply -9 and -6: -9 * -6 = 54
+5. Subtract -8: 54 - (-8) = 54 + 8 = 62
+6. Add 1: 62 + 1 = 63
+7. Add 7 (from step 3) to 63: 63 + 7 = 70
+
+So, the final answer is: {""ANSWER"": 70}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 - 2 + 9 * -1) * (7 - 5 + 9 * -7))","{""ANSWER"": -30}",," Let's solve the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (-5 - 2 + 9 * -1) = (-5 - 2 - 9) = -16
+   (7 - 5 + 9 * -7) = (7 - 5 - 63) = -61
+
+2. Multiply the results:
+   -16 * -61 = 976
+
+So, the answer is: {""ANSWER"": 976}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 - 7 - 8 - 6) * (-2 * -8 * -9 + 4))","{""ANSWER"": -88}",," Let's break down the given math expression:
+
+((5 - 7 - 8 - 6) * (-2 * -8 * -9 + 4))
+
+Step 1: Evaluate the expressions inside the parentheses
+- First, calculate 5 - 7 - 8 - 6 = -16
+- Then, calculate -2 * -8 * -9 = -144
+- Add 4 to -144, which equals -140
+
+Now, the expression becomes: (-16 * -140)
+
+Step 2: Multiply -16 and -140
+-16 * -140 = 2240
+
+So, the final answer is:
+{""ANSWER"": 2240}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 + 1 - 2 - -3) * (-9 * 3 + 9 + -1))","{""ANSWER"": -15}",,"Let's break down the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -5 + 1 - 2 - (-3) 
+   First, handle the negative sign in front of -3: 
+   -5 + 1 - 2 + 3 = -3
+
+2. Now, calculate the value inside the second parentheses:
+   -9 * 3 + 9 - 1
+   First, multiply -9 and 3: 
+   -27
+   Then, add and subtract from left to right: 
+   -27 + 9 = -18
+   -18 - 1 = -19
+
+3. Multiply the results of step 1 and step 2:
+   -3 * -19
+   Multiply the numbers: 
+   57
+
+So, the final answer is: {""ANSWER"": 57}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-2 * -8 * 9 + -5) + (7 - -1 - -4 - 1))","{""ANSWER"": 90}",,"Let's break down the given math expression step by step:
+
+1. Multiply -2, -8, and 9: (-2 * -8 * 9) = 144
+2. Subtract 5 from the result: 144 - 5 = 139
+3. Add 7, -1, -4, and -1: (7 - (-1) - (-4) - 1) = 7 + 1 + 4 - 1 = 11
+4. Add 139 and 11: 139 + 11 = 150
+
+So, the final answer is: {""ANSWER"": 150}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-2 - 5 * -5 - 6) + (-5 * -4 + 2 + -2))","{""ANSWER"": 116}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -5 * -5 = 25
+   -2 - 25 - 6 = -33
+   -5 * -4 = 20
+   -33 + 20 + 2 - 2 = -11
+
+2. Now, add the two results together:
+   -11 + (-11) = -22
+
+So, the final answer is:
+
+{""ANSWER"": -22}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 - 6 * 5 + -9) + (1 + -4 - -2 * 6))","{""ANSWER"": -16}",,"Let's break down the expression step by step.
+
+1. Multiply 6 and 5: 6 * 5 = 30
+2. Subtract 30 from -5: -5 - 30 = -35
+3. Add -9 to -35: -35 + -9 = -44
+4. Multiply -2 and 6: -2 * 6 = -12
+5. Add 1 and -4: 1 + -4 = -3
+6. Add -12 to -3: -3 + -12 = -15
+7. Add -44 and -15: -44 + -15 = -59
+
+So, the final result is -59.
+
+ {""ANSWER"": -59}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 + 0 * 0 * -1) - (7 + -1 + -3 * -2))","{""ANSWER"": -4}",,"Let's break down the expression step by step:
+
+1. Multiply 0 * 0 * -1: 0 * 0 = 0, then 0 * -1 = 0
+2. Add -8 and 0: -8 + 0 = -8
+3. Multiply -3 * -2: -3 * -2 = 6
+4. Add 7, -1, and 6: 7 + -1 + 6 = 12
+5. Subtract 12 from -8: -8 - 12 = -20
+
+The final result is -20.
+
+ {""ANSWER"": -20}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 - -3 * 1 - -3) * (-9 - 5 - -2 * -7))","{""ANSWER"": -14}",," Let's solve the given math expression step by step:
+
+1. Multiply -3 and 1: -3 * 1 = -3
+2. Subtract -9 from the result: -9 - (-3) = -9 + 3 = -6
+3. Add -3 to the result: -6 - (-3) = -6 + 3 = -3
+4. Multiply -3 by -3: -3 * -3 = 9
+5. Subtract 5 from -9: -9 - 5 = -14
+6. Multiply -2 by -7: -2 * -7 = 14
+7. Subtract 14 from -14: -14 - 14 = -28
+8. Multiply -3 by -28: -3 * -28 = 84
+9. Multiply -6 by 84: -6 * 84 = -504
+
+The final result is -504. Here's the answer in JSON format:
+
+{""ANSWER"": -504}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 * -2 + 8 * 1) * (9 + -3 * -8 - -5))","{""ANSWER"": 320}",,"Let's solve the expression step by step:
+
+(5 * -2 + 8 * 1) = -10 + 8 = -2
+
+(9 + -3 * -8 - -5) = 9 + 24 + 5 = 38
+
+Now, multiply the two results:
+
+(-2) * 38 = -76
+
+So, the final answer is:
+
+{""ANSWER"": -76}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 * 9 - -9 + 7) + (9 * -6 * -4 * -6))","{""ANSWER"": -28}",,"Let's break down the given math expression:
+
+((-7 * 9 - -9 + 7) + (9 * -6 * -4 * -6))
+
+First, solve the expressions inside the parentheses:
+
+1. (-7 * 9 - -9 + 7)
+   = (-63 + 9 + 7)
+   = -47
+
+2. (9 * -6 * -4 * -6)
+   = (9 * -24)
+   = -216
+
+Now, add the results:
+
+(-47) + (-216)
+= -263
+
+So, the answer is -263.
+
+Here's the response in the requested format:
+
+{""ANSWER"": -263}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((4 - 3 * -1 * 3) * (3 + 8 + 1 - 7))","{""ANSWER"": 40}",,"Let's solve the given math expression step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply 3 and -1: 3 * -1 = -3
+2. Multiply -3 by 3: -3 * 3 = -9
+3. Subtract -9 from 4: 4 - (-9) = 4 + 9 = 13
+4. Add 3, 8, and 1: 3 + 8 + 1 = 12
+5. Subtract 7 from 12: 12 - 7 = 5
+6. Multiply 13 by 5: 13 * 5 = 65
+
+So, the final answer is:
+
+{""ANSWER"": 65}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-3 - 8 * 5 + 5) - (-1 * -3 - -2 - 6))","{""ANSWER"": 24}",,"Let's solve the given math expression step by step:
+
+1. Multiply 8 and 5: 8 * 5 = 40
+2. Subtract 40 from -3: -3 - 40 = -43
+3. Add 5 to -43: -43 + 5 = -38
+4. Multiply -1 and -3: -1 * -3 = 3
+5. Add -2 and -6: -2 + (-6) = -8
+6. Add 3 and -8: 3 + (-8) = -5
+7. Subtract -5 from -38: -38 - (-5) = -38 + 5 = -33
+
+So, the final result is -33.
+
+Here's the JSON response:
+
+{""ANSWER"": -33}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 + 3 - -5 - 4) + (-3 - -3 + 6 * 9))","{""ANSWER"": 16}",,"Let's break down the math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (1 + 3 - (-5) - 4) = (1 + 3 + 5 - 4) = (9 - 4) = 5
+   (-3 - (-3) + 6 * 9) = (-3 + 3 + 54) = 54
+
+2. Now, add the results together:
+   5 + 54 = 59
+
+So, the answer is:
+
+ {""ANSWER"": 59}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 * 9 - 3 * 2) + (-1 * -7 - 1 - -9))","{""ANSWER"": 76}",,"Let's solve the given math equation step by step.
+
+((3 * 9 - 3 * 2) + (-1 * -7 - 1 - -9))
+
+First, calculate the expressions inside the parentheses:
+
+1. 3 * 9 = 27
+2. 3 * 2 = 6
+3. 27 - 6 = 21
+4. -1 * -7 = 7
+5. -1 - (-9) = -1 + 9 = 8
+
+Now, add the results of the two expressions:
+
+21 + (7 + 8) = 21 + 15 = 36
+
+So, the final result is 36.
+
+Here's the JSON response:
+
+{""ANSWER"": 36}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((7 * 9 * 3 * 6) * (-8 * -6 + -9 + -5))","{""ANSWER"": -2038}",,"Let's break down the expression step by step:
+
+1. Multiply 7, 9, 3, and 6: 7 * 9 = 63, 63 * 3 = 189, 189 * 6 = 1134
+2. Multiply -8, -6, -9, and -5: -8 * -6 = 48, 48 + -9 = 39, 39 + -5 = 34
+3. Multiply the results of steps 1 and 2: 1134 * 34 = 38,496
+
+ANSWER: 38496",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 + 1 + -7 * -6) - (4 * 2 * -5 + -5))","{""ANSWER"": 19}",,"Let's break down the equation step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - (1 + 1 + -7 * -6) = (1 + 1 + 42) = 44
+   - (4 * 2 * -5 + -5) = (-40 + -5) = -45
+
+2. Now subtract the second expression from the first:
+   - 44 - (-45) = 44 + 45 = 89
+
+So, the final answer is:
+{""ANSWER"": 89}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 + 1 * 3 - 2) * (-8 - -2 - 9 + -9))","{""ANSWER"": -59}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   1 + 1 * 3 = 1 + 3 = 4
+   -8 - -2 - 9 + -9 = -8 + 2 - 9 - 9 = -24
+
+2. Now, substitute these values back into the original expression:
+   (4) * (-24)
+
+3. Multiply 4 and -24:
+   4 * (-24) = -96
+
+So, the answer is -96.
+
+Here's the JSON response:
+
+{""ANSWER"": -96}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 + 6 * 4 * 9) + (-9 - 0 * 3 - 1))","{""ANSWER"": 50}",," Let's solve the expression step by step:
+
+(5 + 6 * 4 * 9) + (-9 - 0 * 3 - 1)
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply 6 and 4: 6 * 4 = 24
+2. Multiply 24 by 9: 24 * 9 = 216
+3. Add 5 and 216: 5 + 216 = 221
+4. Multiply 0 and 3: 0 * 3 = 0
+5. Subtract 0, 3, and 1: -9 - 0 - 1 = -10
+6. Add 221 and -10: 221 + (-10) = 211
+
+So, the final result is 211.
+
+Here is the JSON response:
+
+{""ANSWER"": 211}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 - 9 + -9 * -9) - (1 + -3 - 5 - 5))","{""ANSWER"": 16}",,"Let's solve the math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -1 - 9 = -10
+   -9 * -9 = 81
+   So, (-1 - 9 + -9 * -9) = -10 + 81 = 71
+
+   1 + -3 - 5 - 5 = -12
+
+2. Now, subtract the second result from the first:
+   71 - (-12) = 71 + 12 = 83
+
+So, the answer is: {""ANSWER"": 83}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 + -6 - -4 + -6) - (-2 * -5 - -1 * 1))","{""ANSWER"": 5}",,"Let's solve the given math expression step by step.
+
+1. Evaluate the expressions inside the parentheses:
+   - (-1 + -6 - -4 + -6) = -1 - 6 + 4 - 6 = -9
+   - (-2 * -5 - -1 * 1) = 10 + 1 = 11
+
+2. Now, subtract the second result from the first:
+   - (-9) - 11 = -9 - 11 = -20
+
+So, the final answer is:
+{""ANSWER"": -20}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-2 - -7 + 5 * -3) + (2 - 8 + 5 * -7))","{""ANSWER"": -24}",," Let's break down the expression step by step.
+
+ (-2 - -7 + 5 * -3) 
+= (-2 + 7 + 5 * -3) 
+= (5 + 5 * -3) 
+= (5 - 15) 
+= -10
+
+(2 - 8 + 5 * -7) 
+= (-6 + 5 * -7) 
+= (-6 - 35) 
+= -41
+
+Now, let's add the two results together:
+-10 + (-41) 
+= -51
+
+ANSWER: -51",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 - -6 - 7 + 3) + (-7 + 6 * 9 + 8))","{""ANSWER"": 25}",," Let's break down the equation step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -3 - 6 - 7 + 3 = -13
+   -7 + 6 * 9 + 8 = -7 + 54 + 8 = 55
+
+2. Now, add the two results together:
+   -13 + 55 = 42
+
+So, the answer is:
+{""ANSWER"": 42}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 - -9 * 8 - -9) + (-9 - 2 * -6 + -6))","{""ANSWER"": 80}",,"Let's break down the math expression step by step:
+
+1. Multiply -9 and 8: -9 * 8 = -72
+2. Add -1 and -72: -1 + (-72) = -73
+3. Subtract -9: -73 - (-9) = -73 + 9 = -64
+4. Multiply -9 and -6: -9 * -6 = 54
+5. Add 54 and -2 * -6: 54 + (2 * -6) = 54 - 12 = 42
+6. Subtract 42: -64 - 42 = -106
+
+So, the result of the expression is -106.
+
+Here's the JSON response:
+{""ANSWER"": -106}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 + 6 + -6 * -1) + (-5 + -5 + 9 + -2))","{""ANSWER"": 5}",,"Let's break down the math step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -5 + 6 = 1
+   -6 * -1 = 6
+   So, (-5 + 6 + -6 * -1) = 1 + 6 = 7
+
+2. Evaluate the second set of parentheses:
+   -5 + -5 = -10
+   -10 + 9 = -1
+   -1 + -2 = -3
+
+3. Now, add the results of both sets of parentheses:
+   7 + (-3) = 4
+
+So, the answer is:
+
+ {""ANSWER"": 4}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((4 + -1 + -7 + 2) - (-7 + -9 * -6 + -3))","{""ANSWER"": 0}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - (4 + -1 + -7 + 2) = (4 - 1 - 7 + 2) = -2
+   - (-7 + -9 * -6 + -3) = (-7 + 54 - 3) = 44
+
+2. Now, subtract the second result from the first:
+   - (-2) - 44 = -46
+
+So, the final answer is:
+
+ {""ANSWER"": -46}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 * 9 * 0 - -1) - (-9 - -7 + -4 - 8))","{""ANSWER"": 80}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (8 * 9 * 0) = 0
+   - -1 = 1
+   -9 - -7 = -2
+   -4 - 8 = -12
+   So the expression becomes:
+   (0 - 1) - (-2 - 12)
+
+2. Evaluate the expressions inside the second set of parentheses:
+   -2 - 12 = -14
+
+3. Now the expression becomes:
+   (0 - 1) - (-14)
+   = -1 - (-14)
+   = -1 + 14 (since subtracting a negative is the same as adding)
+   = 13
+
+So the final answer is:
+{""ANSWER"": 13}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((4 + 5 * -9 * -8) - (-9 + -7 - -6 - -9))","{""ANSWER"": 1024}",,"Let's break down the equation step by step:
+
+1. Multiply 5, -9, and -8: 5 * -9 * -8 = 5 * 72 = 360
+2. Add 4 and 360: 4 + 360 = 364
+3. Multiply -9, -7, -6, and -9: -9 * -7 = 63, -6 * -9 = 54, -9 * -9 = 81
+4. Add the results from step 3: 63 + 54 + 81 = 198
+5. Subtract 198 from 364: 364 - 198 = 166
+
+So the final result is 166.
+
+Here is the JSON response:
+
+{""ANSWER"": 166}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 + 5 - 0 - 6) * (-5 * -4 - 6 + -3))","{""ANSWER"": -80}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - (-8 + 5 - 0 - 6) = (-8 + 5 - 6) = -9
+   - (-5 * -4 - 6 + -3) = (20 - 6 - 3) = 11
+
+2. Multiply the two results:
+   - (-9) * 11 = -99
+
+So, the final answer is:
+
+{""ANSWER"": -99}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-4 + -5 * 7 + 7) + (3 * -3 - -4 + 4))","{""ANSWER"": -4}",," Let's solve the expression step by step.
+
+ 1. Multiply -5 and 7: -5 * 7 = -35
+ 2. Add -4: -35 + (-4) = -39
+ 3. Add 7: -39 + 7 = -32
+ 4. Multiply 3 and -3: 3 * -3 = -9
+ 5. Add -4: -9 + (-4) = -13
+ 6. Add 4: -13 + 4 = -9
+ 7. Add -32 and -9: -32 + (-9) = -41
+
+So, the final answer is:
+ {""ANSWER"": -41}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((0 * 8 - -9 * 6) - (-3 * -9 * -1 - 7))","{""ANSWER"": 21}",,"Let's break down the math expression:
+
+((0 * 8 - -9 * 6) - (-3 * -9 * -1 - 7))
+
+First, calculate the expressions inside the parentheses:
+
+-0 * 8 = 0
+-(-9) * 6 = 9 * 6 = 54
+-3 * -9 * -1 = -3 * 9 = -27
+-27 - 7 = -34
+
+Now, put it all together:
+
+(0 - 54) - (-34)
+= -54 - (-34)
+= -54 + 34
+= -20
+
+ANSWER: -20",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((0 * 9 + -8 * 7) - (7 - 9 + 1 + 0))","{""ANSWER"": -63}",,"Let's solve the given math expression step by step:
+
+1. Calculate the expressions inside the parentheses:
+   (0 * 9) = 0
+   (-8 * 7) = -56
+   (7 - 9 + 1 + 0) = -1
+
+2. Now, let's rewrite the expression with the calculated values:
+   (0 - (-56)) - (-1)
+
+3. Calculate the expression:
+   (0 + 56) - (-1)
+   = 56 + 1
+   = 57
+
+So, the answer is: {""ANSWER"": 57}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((9 * 4 - 6 - -8) + (6 - 8 - -4 * 3))","{""ANSWER"": 30}",,"Let's solve the given math expression step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Parentheses: Inside the parentheses we have:
+   - 9 * 4 = 36
+   - 6 - 8 = -2
+   - -2 - (-8) = -2 + 8 = 6
+   - 6 - 8 = -2
+   - -4 * 3 = -12
+   - -2 - (-12) = -2 + 12 = 10
+
+2. Now the expression becomes: (36 + 10)
+
+3. Add 36 and 10: 36 + 10 = 46
+
+So, the final answer is: {""ANSWER"": 46}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((6 - 1 - -3 + -2) + (5 * 5 + -1 - -8))","{""ANSWER"": 24}",," Let's solve the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (6 - 1 - -3 + -2) = (6 - 1 + 3 - 2) = 6
+   (5 * 5 + -1 - -8) = (25 + 1 + 8) = 34
+
+2. Now, add the results of the expressions:
+   6 + 34 = 40
+
+So, the final answer is: {""ANSWER"": 40}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-4 + 4 + 3 * 1) - (-9 - -3 + -6 - 5))","{""ANSWER"": 11}",," Let's solve the expression step by step:
+
+1. Multiply 3 and 1: 3 * 1 = 3
+2. Add -4 and 4: -4 + 4 = 0
+3. Add 0 and 3: 0 + 3 = 3
+4. Subtract -9 from 3: 3 - (-9) = 3 + 9 = 12
+5. Add -3 to 12: 12 - 3 = 9
+6. Subtract -6 from 9: 9 - (-6) = 9 + 6 = 15
+7. Subtract 5 from 15: 15 - 5 = 10
+8. Subtract the result of the expression inside the parentheses from 3: 3 - 10 = -7
+
+So, the answer is: {""ANSWER"": -7}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-3 - -6 - -7 + 3) + (5 * 5 * 1 - -3))","{""ANSWER"": 25}",,"Let's solve the math question step by step.
+
+First, simplify the expressions inside the parentheses:
+
+1. (-3 - -6 - -7) = -3 + 6 + 7 = 10
+2. (5 * 5 * 1) = 25
+3. (- -3) = 3
+
+Now, substitute these values back into the original equation:
+
+((-3 - -6 - -7 + 3) + (5 * 5 * 1 - -3)) = (10 + 3) + (25 + 3)
+
+Next, perform the addition operations:
+
+(10 + 3) = 13
+(25 + 3) = 28
+
+Now, substitute these values back into the equation:
+
+(10 + 3) + (25 + 3) = 13 + 28
+
+Perform the final addition operation:
+
+13 + 28 = 41
+
+Therefore, the answer is:
+
+{""ANSWER"": 41}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 * 4 + 7 - 5) + (9 + -6 + -2 * 5))","{""ANSWER"": -3}",,"Let's break down the math step by step:
+
+1. Multiply -8 and 4: -8 * 4 = -32
+2. Add 7: -32 + 7 = -25
+3. Subtract 5: -25 - 5 = -30
+4. Multiply 9 and -2: 9 * -2 = -18
+5. Add -6: -18 + -6 = -24
+6. Multiply -2 and 5: -2 * 5 = -10
+7. Add -10: -24 + -10 = -34
+8. Add -30 and -34: -30 + -34 = -64
+
+So, the final answer is:
+
+{""ANSWER"": -64}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 - -6 * 7 * 0) * (0 + -5 * -8 - 0))","{""ANSWER"": 0}",," Let's solve the given math expression step by step.
+
+1. Multiply -6 and 7 and 0:
+   -6 * 7 * 0 = 0
+
+2. Subtract 0 from -8:
+   -8 - 0 = -8
+
+3. Multiply -8 by the result of step 1:
+   -8 * 0 = 0
+
+4. Multiply -5 and -8:
+   -5 * -8 = 40
+
+5. Add 40 to 0:
+   0 + 40 = 40
+
+6. Multiply the result of step 3 by the result of step 5:
+   0 * 40 = 0
+
+So, the final result is 0.
+
+Here's the JSON response:
+
+{""ANSWER"": 0}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 * 1 * 3 - 9) * (-7 + 4 - -7 * -3))","{""ANSWER"": -20}",,"Let's break down the given math expression:
+
+((5 * 1 * 3 - 9) * (-7 + 4 - -7 * -3))
+
+1. Multiply 5, 1, and 3: 5 * 1 * 3 = 15
+2. Subtract 9 from the result: 15 - 9 = 6
+3. Multiply -7 and -3: -7 * -3 = 21
+4. Add 4 and the result from step 3: -7 + 4 + 21 = 18
+5. Multiply the result from step 2 by the result from step 4: 6 * 18 = 108
+
+Therefore, the final answer is:
+
+{""ANSWER"": 108}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 - -2 * -9 + 8) - (3 - 4 * -3 - -6))","{""ANSWER"": 46}",,"Let's solve the given math expression step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply -2 and -9: -2 * -9 = 18
+2. Multiply 4 and -3: 4 * -3 = -12
+3. Multiply -6 and -4: -6 * -4 = 24
+4. Subtract 18 from 5: 5 - 18 = -13
+5. Add 8 to -13: -13 + 8 = -5
+6. Subtract -12 from 3: 3 - (-12) = 3 + 12 = 15
+7. Subtract 24 from 15: 15 - 24 = -9
+8. Subtract -5 from -9: -9 - (-5) = -9 + 5 = -4
+
+So, the final result of the given expression is -4.
+
+Here's the JSON response:
+
+{""ANSWER"": -4}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((7 + 1 + 9 * 1) + (7 - -3 + 3 * 1))","{""ANSWER"": 32}",,"Let's break down the math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (7 + 1 + 9 * 1) = 7 + 1 + 9 = 17
+   (7 - -3 + 3 * 1) = 7 + 3 + 3 = 13
+
+2. Now add the results:
+   17 + 13 = 30
+
+So, the final answer is:
+
+{""ANSWER"": 30}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 + -2 * 3 * 0) + (3 + -4 - 7 - -4))","{""ANSWER"": -1}",," Let's break down the expression step by step:
+
+1. Multiply -2 and 3: -2 * 3 = -6
+2. Multiply -6 by 0: -6 * 0 = 0
+3. Add -6 and 0: -6 + 0 = -6
+4. Add 3 to -4: 3 + -4 = -1
+5. Add -1 and -7: -1 + -7 = -8
+6. Add -8 and -4: -8 + -4 = -12
+7. Add -6 and -12: -6 + -12 = -18
+
+So the expression evaluates to -18.
+
+Here's the JSON response:
+
+{""ANSWER"": -18}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 + -4 * -9 * 0) + (2 * -9 + 3 * -3))","{""ANSWER"": -7}",,"Let's solve the expression step by step.
+
+1. Multiply -4 and -9: -4 * -9 = 36
+2. Multiply 36 by 0: 36 * 0 = 0
+3. Add -8 and 0: -8 + 0 = -8
+4. Multiply -9 and 2: -9 * 2 = -18
+5. Multiply -3 and 3: -3 * 3 = -9
+6. Add -18 and -9: -18 + (-9) = -27
+7. Add -8 and -27: -8 + (-27) = -35
+
+The final result is -35.
+
+Here is the JSON response:
+
+{""ANSWER"": -35}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 + 6 - 8 * -9) - (9 - 9 * -2 + -1))","{""ANSWER"": 80}",," Let's break down the equation step by step:
+
+1. Multiply -8 and -9: -8 * -9 = 72
+2. Add 6 to the result: 72 + 6 = 78
+3. Subtract 72 from the result: 78 - 72 = 6
+4. Multiply 9 and -2: 9 * -2 = -18
+5. Add -1 to the result: -18 + -1 = -19
+6. Subtract -19 from the result: 6 - (-19) = 6 + 19 = 25
+
+So, the final answer is:
+{""ANSWER"": 25}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((9 - -6 * 9 * 4) - (6 - 4 * -8 * -7))","{""ANSWER"": 30}",,"Let's break down the math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - 6 * -8 * -7 = -336 (since multiplying two negative numbers gives a positive result)
+   - 4 * -9 * 9 * 4 = -1296 (since multiplying two negative numbers gives a positive result)
+
+2. Now, evaluate the entire expression:
+   - (9 - (-6 * 9 * 4)) = (9 - (-1296)) = (9 + 1296) = 1305
+   - (6 - (-4 * -8 * -7)) = (6 - (-336)) = (6 + 336) = 342
+   - 1305 - 342 = 963
+
+So, the answer is:
+{""ANSWER"": 963}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 + 3 * -8 - -8) - (2 + 2 * -9 - 6))","{""ANSWER"": 22}",,"Let's break down the math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - Inside the first parentheses: 8 + 3 * -8 - -8
+     - 3 * -8 = -24
+     - -8 = -8 (since two negative signs make a positive)
+     - So, 8 + (-24) - (-8) = 8 - 24 + 8 = -8
+   - Inside the second parentheses: 2 + 2 * -9 - 6
+     - 2 * -9 = -18
+     - So, 2 + (-18) - 6 = -22
+
+2. Now subtract the second result from the first:
+   - (-8) - (-22) = -8 + 22 = 14
+
+So, the final result is 14.
+
+Here is the answer in JSON format:
+{""ANSWER"": 14}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 + 8 - -4 * 2) - (1 - 9 + -6 * 3))","{""ANSWER"": -1}",,"Let's solve the given math expression step by step.
+
+1. Evaluate the expressions inside the parentheses:
+   -4 * 2 = -8
+   -6 * 3 = -18
+
+   Now the expression becomes: (-9 + 8 - (-8)) - (1 - 9 - 18)
+
+2. Next, evaluate the expressions inside the innermost parentheses:
+   -(-8) = 8 (two negative signs make a positive)
+   -18 = -18 (no change needed)
+
+   Now the expression becomes: (-9 + 8 + 8) - (1 - 9 - 18)
+
+3. Now, add and subtract from left to right:
+   -9 + 8 + 8 = 7
+   1 - 9 - 18 = -26
+
+   Now the expression becomes: 7 - (-26)
+
+4. Subtracting a negative number is the same as adding a positive number:
+   7 - (-26) = 7 + 26 = 33
+
+So, the final answer is: {""ANSWER"": 33}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 * -6 - -1 - -8) - (8 + -7 * 8 * -4))","{""ANSWER"": 55}",,"Let's break down the expression step by step:
+
+1. Multiply -1 and -6: -1 * -6 = 6
+2. Subtract -1: 6 - (-1) = 6 + 1 = 7
+3. Subtract -8: 7 - (-8) = 7 + 8 = 15
+4. Multiply -7 and 8: -7 * 8 = -56
+5. Multiply -56 by -4: -56 * -4 = 224
+6. Add 8: 224 + 8 = 232
+7. Subtract 232 from 15: 15 - 232 = -217
+
+So, the final result is -217.
+
+Here's the JSON response:
+
+{""ANSWER"": -217}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-3 * 6 - 0 * 6) - (-6 * -6 * 7 + -8))","{""ANSWER"": -30}",,"Let's break down the equation step by step:
+
+1. Multiply -3 and 6: -3 * 6 = -18
+2. Multiply 0 and 6: 0 * 6 = 0
+3. Add -18 and 0: -18 + 0 = -18
+4. Multiply -6 and -6: -6 * -6 = 36
+5. Multiply 36 and 7: 36 * 7 = 252
+6. Multiply -8: -8 * -6 = -48
+7. Add 252 and -48: 252 - 48 = 204
+8. Subtract 204 from -18: -18 - 204 = -222
+
+So, the final answer is:
+
+{""ANSWER"": -222}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 - -1 - -5 * -5) + (8 + -5 - 9 * -7))","{""ANSWER"": 32}",,"Let's solve the math question step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -6 - (-1) = -6 + 1 = -5
+   -5 * (-5) = 25
+   -5 + 25 = 20
+
+   So, (-6 - (-1 - -5 * -5)) = 20
+
+2. Now, evaluate the second expression inside the parentheses:
+   (8 + (-5)) = 8 - 5 = 3
+   3 - 9 * (-7) = 3 + 63 = 66
+
+   So, (8 + (-5 - 9 * -7)) = 66
+
+3. Now, add the two results:
+   20 + 66 = 86
+
+Therefore, the answer is:
+
+{""ANSWER"": 86}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 + -4 + 0 * -1) * (4 * -3 * -8 - -4))","{""ANSWER"": 24}",," Let's solve the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - (-9 + -4) = -13
+   - 0 * -1 = 0
+   - So, (-9 + -4 + 0 * -1) = -13 + 0 = -13
+
+   - (4 * -3) = -12
+   - (-12 * -8) = 96
+   - (-4) = -4
+   - So, (4 * -3 * -8 - -4) = 96 - (-4) = 100
+
+2. Multiply the results of the two expressions:
+   - (-13) * 100 = -1300
+
+Therefore, the result of the given expression is -1300.
+
+Here's the JSON response:
+
+{""ANSWER"": -1300}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-2 - 2 * 2 + 0) - (7 - 6 - -7 - -1))","{""ANSWER"": -4}",,"Let's solve the given math expression step by step:
+
+1. Calculate the multiplication first:
+   2 * 2 = 4
+
+2. Now, the expression becomes:
+   (-2 - 4 + 0) - (7 - 6 - (-7) - (-1))
+
+3. Calculate the expressions inside the parentheses:
+   -2 - 4 + 0 = -6
+   7 - 6 - (-7) - (-1) = 7 - 6 + 7 + 1 = 9
+
+4. Now, the expression becomes:
+   -6 - 9 = -15
+
+So, the final result is -15. Here's the JSON response:
+
+{""ANSWER"": -15}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 - -4 * 2 - 9) * (9 - 6 - 1 + -4))","{""ANSWER"": -49}",," Let's solve the given math expression step by step:
+
+1. Multiply -4 by 2: -4 * 2 = -8
+2. Add -7 and -8: -7 + (-8) = -15
+3. Add -9 to -15: -15 + (-9) = -24
+4. Subtract 6 from 9: 9 - 6 = 3
+5. Subtract 1 from 3: 3 - 1 = 2
+6. Subtract 4 from 2: 2 - 4 = -2
+7. Multiply -24 by -2: -24 * (-2) = 48
+
+So, the result of the given expression is 48.
+
+Here's the JSON response:
+
+{""ANSWER"": 48}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 * 4 * -9 - -9) * (5 * 2 * 6 * -2))","{""ANSWER"": 0}",,"Let's break down the expression step by step:
+
+1. Calculate the expressions inside the parentheses:
+   -9 * 4 * -9 = -9 * -36 = 324
+   - -9 = 9
+   So, (-9 * 4 * -9 - -9) = 324 + 9 = 333
+
+2. Now, calculate the other expression inside the parentheses:
+   5 * 2 * 6 * -2 = 5 * -24 = -120
+
+3. Multiply the results from step 1 and step 2:
+   333 * -120 = -39960
+
+So, the answer is -39960.
+
+Here is the JSON response:
+{""ANSWER"": -39960}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 + -3 + 6 - 8) - (-7 * -2 * -6 + -6))","{""ANSWER"": -16}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -9 + -3 + 6 - 8 = -14
+-7 * -2 * -6 = -84
+-6 remains the same
+
+2. Now, substitute the values back into the original expression:
+-14 - (-84 - 6)
+
+3. Evaluate the expression inside the parentheses:
+-84 - 6 = -90
+
+4. Now, substitute the value back into the original expression:
+-14 - (-90)
+
+5. To subtract a negative number, we add its absolute value:
+-14 + 90 = 76
+
+So, the final answer is:
+
+ {""ANSWER"": 76}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 + 5 * -6 * -6) * (7 * -5 + -6 - 7))","{""ANSWER"": -343}",,"Let's break down the math expression step by step:
+
+1. Multiply 5 and -6: 5 * -6 = -30
+2. Multiply -30 by -6: -30 * -6 = 180
+3. Add -7 to 180: -7 + 180 = 173
+4. Multiply 7 and -5: 7 * -5 = -35
+5. Add -6 and -7: -6 + -7 = -13
+6. Add -35 and -13: -35 + -13 = -48
+7. Multiply 173 by -48: 173 * -48 = -8294
+
+So, the final result is:
+
+{""ANSWER"": -8294}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 * 0 + 2 * 2) * (-9 - 1 * -9 * 3))","{""ANSWER"": -80}",,"Let's break down the math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -8 * 0 = 0
+   2 * 2 = 4
+   -9 - 1 * -9 * 3 = -9 - 1 * (-27) = -9 + 27 = 18
+
+2. Multiply the results:
+   4 * 18 = 72
+
+3. So, the final result is:
+   {""ANSWER"": 72}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((9 + 2 + 3 - -3) + (-5 + 6 - -6 - -9))","{""ANSWER"": 8}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (9 + 2 + 3 - (-3)) = 9 + 2 + 3 + 3 = 17
+   (-5 + 6 - (-6) - (-9)) = -5 + 6 + 6 + 9 = 16
+
+2. Now, add the results of both expressions:
+   17 + 16 = 33
+
+So, the answer is:
+
+{""ANSWER"": 33}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 - 6 - 7 + 6) - (-1 - 1 * -7 + 9))","{""ANSWER"": 8}",,"Let's solve the given math expression step by step:
+
+1. Evaluate the expressions inside the innermost parentheses:
+   - 5 - 6 - 7 + 6 = -2
+   - -1 - 1 * -7 + 9 = -1 + 7 + 9 = 15
+
+2. Now, substitute the values back into the original expression:
+   - ((5 - 6 - 7 + 6) - (-1 - 1 * -7 + 9)) = (-2 - 15)
+
+3. Finally, evaluate the expression:
+   - (-2 - 15) = -17
+
+Here is the JSON response:
+
+{""ANSWER"": -17}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 - -7 + 2 + 2) + (-7 + -9 - -1 - 0))","{""ANSWER"": 0}",,"Let's break down the given math expression step by step.
+
+First, let's solve the expressions within the parentheses:
+
+1. (-9 - -7 + 2 + 2)
+   = (-9 + 7) + (2 + 2)
+   = -2 + 4
+   = 2
+
+2. (-7 + -9 - -1 - 0)
+   = (-7 - 9) + (-1 - 0)
+   = -16 + (-1)
+   = -17
+
+Now, let's add the results of both expressions:
+
+2 + (-17)
+= -15
+
+So, the final answer is:
+
+{""ANSWER"": -15}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 * -4 + -1 + 1) + (-9 * -6 + 7 + 9))","{""ANSWER"": 134}",,"Let's solve the given math question step by step:
+
+1. Multiply -6 and -4: -6 * -4 = 24
+2. Add -1 and 1: -1 + 1 = 0
+3. Add the results of steps 1 and 2: 24 + 0 = 24
+4. Multiply -9 and -6: -9 * -6 = 54
+5. Add 7 and 9: 7 + 9 = 16
+6. Add the results of steps 4 and 5: 54 + 16 = 70
+7. Add the result of step 3 to the result of step 6: 24 + 70 = 94
+
+So, the final answer is:
+{""ANSWER"": 94}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((7 - 5 * 7 + -1) + (6 * 4 - 9 + -7))","{""ANSWER"": -4}",,"Let's solve the math expression step by step.
+
+First, calculate the multiplication:
+5 * 7 = 35
+
+Then, subtract 35 from 7:
+7 - 35 = -28
+
+Next, add -1 to -28:
+-28 + (-1) = -29
+
+Now, calculate the multiplication:
+6 * 4 = 24
+
+Then, subtract 9 from 24:
+24 - 9 = 15
+
+Next, subtract 7 from 15:
+15 - 7 = 8
+
+Now, add -29 and 8:
+-29 + 8 = -21
+
+So, the final answer is -21.
+
+Here is the response in JSON format:
+{""ANSWER"": -21}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((6 + -8 * -3 - -5) * (2 - 7 * -2 * -8))","{""ANSWER"": 96}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - 6 + -8 * -3 = 6 + 24 = 30
+   - -5 is already simplified
+   - 2 - 7 * -2 * -8 = 2 - 7 * -16 = 2 + 112 = 114
+
+2. Now, rewrite the expression with the evaluated values:
+   - 30 * 114
+
+3. Multiply 30 and 114:
+   - 30 * 114 = 3420
+
+So, the final answer is:
+
+{""ANSWER"": 3420}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 * -1 * -6 - 7) - (-4 * 0 - -4 - 9))","{""ANSWER"": 30}",," Let's solve the given math expression step by step.
+
+First, calculate the expressions inside the parentheses:
+
+(-1 * -1 * -6 - 7) 
+= (1 * -6 - 7) 
+= (-6 - 7) 
+= -13
+
+(-4 * 0 - -4 - 9) 
+= (0 + 4 - 9) 
+= -5
+
+Now, subtract the second result from the first:
+
+(-13) - (-5) 
+= -13 + 5 
+= -8
+
+So, the final answer is -8.
+
+Here's the JSON response:
+
+{""ANSWER"": -8}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 + 1 - -4 * -2) + (4 - -8 - -1 - -2))","{""ANSWER"": -1}",," Let's solve the given math equation step by step.
+
+ First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply -4 and -2: -4 * -2 = 8
+2. Add and subtract from left to right:
+   -6 + 1 = -5
+   -5 + 8 = 3
+3. Now, let's solve the second part of the equation:
+   4 - (-8) = 4 + 8 = 12
+   -12 - (-1) = -12 + 1 = -11
+   -11 - (-2) = -11 + 2 = -9
+4. Now, add the results of both parts:
+   3 + (-9) = -6
+
+So, the final answer is -6.
+
+Here's the JSON response:
+
+ {""ANSWER"": -6}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((7 + -9 * -5 + -3) * (-8 * 8 - -5 + -5))","{""ANSWER"": -16}",," Let's solve the expression step by step.
+
+First, follow the order of operations (PEMDAS):
+
+1. Calculate the expressions inside the parentheses:
+   -9 * -5 = 45
+   -8 * 8 = 64
+
+2. Now, substitute the values back into the expression:
+   (7 + 45 - 3) * (64 - 5 - 5)
+
+3. Continue simplifying the expressions inside the parentheses:
+   (7 + 42) * (64 - 10)
+   49 * 54
+
+4. Multiply the values:
+   49 * 54 = 2646
+
+So, the answer is: {""ANSWER"": 2646}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 * 4 * 0 * -3) - (6 + -4 + 2 * -7))","{""ANSWER"": -30}",,"Let's solve the given math expression step by step.
+
+First, calculate the multiplication:
+3 * 4 * 0 * -3 = 0 (since any number multiplied by 0 is 0)
+
+Then, calculate the addition and subtraction inside the second parentheses:
+6 + -4 + 2 * -7
+= 6 - 4 - 14 (since -7 * 2 = -14)
+= 2 - 14
+= -12
+
+Now, subtract the result from the first parentheses from the result of the second parentheses:
+0 - (-12) = 12
+
+So, the final result is 12.
+
+Here's the JSON response:
+{""ANSWER"": 12}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((2 + -6 * -7 - 7) + (-2 - -5 + -4 + -2))","{""ANSWER"": 29}",,"Let's break down the math step by step:
+
+1. Multiply -6 and -7: -6 * -7 = 42
+2. Add 2 and 42: 2 + 42 = 44
+3. Subtract 7 from 44: 44 - 7 = 37
+4. Add -2, -5, -4, and -2: -2 + -5 + -4 + -2 = -13
+5. Add 37 and -13: 37 + (-13) = 37 - 13 = 24
+
+So, the final result is 24.
+
+In JSON format:
+{""ANSWER"": 24}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-3 + -4 * 5 * -7) - (-1 * -4 + -9 + 2))","{""ANSWER"": 116}",,"Let's solve the given math expression step by step.
+
+1. Multiply -4 and 5: -4 * 5 = -20
+2. Multiply -20 by -7: -20 * -7 = 140
+3. Add -3 to 140: -3 + 140 = 137
+4. Multiply -1 and -4: -1 * -4 = 4
+5. Add -9 to 4: 4 - 9 = -5
+6. Add 2 to -5: -5 + 2 = -3
+7. Subtract -3 from 137: 137 - (-3) = 137 + 3 = 140
+
+So, the final answer is:
+{""ANSWER"": 140}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((0 + -9 * 6 * 4) + (5 - -3 + 8 * 5))","{""ANSWER"": -35}",,"Let's solve the given math expression step by step:
+
+1. First, we need to follow the order of operations (PEMDAS/BODMAS):
+   - Multiply 9, 6, and 4: -9 * 6 * 4 = -216
+   - Add 0 to the result: 0 - 216 = -216
+   - Multiply 8 and 5: 8 * 5 = 40
+   - Subtract -3 from 5: 5 - (-3) = 8
+   - Add 8 to the result: 8 + 40 = 48
+   - Add -216 to the result: -216 + 48 = -168
+
+2. Now, we have the result of the entire expression: -168
+
+Here's the JSON response:
+
+{""ANSWER"": -168}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-4 - -6 - -5 - 5) - (-2 + -4 - -8 + 6))","{""ANSWER"": 5}",," Let's break it down step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -4 - -6 = 10
+   -10 - -5 = 15
+   15 - 5 = 10
+
+2. Now, evaluate the expressions inside the second parentheses:
+   -2 + -4 = -6
+   -6 - -8 = 2
+   2 + 6 = 8
+
+3. Now, subtract the second result from the first result:
+   10 - 8 = 2
+
+So, the answer is 2.
+
+ {""ANSWER"": 2}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-3 + -4 * 3 - -8) + (8 - 1 - -4 - -1))","{""ANSWER"": 16}",,"Let's break down the expression step by step:
+
+1. Multiply -4 and 3: -4 * 3 = -12
+2. Add -3 and -12: -3 + (-12) = -15
+3. Add -8: -15 + (-8) = -23
+4. Evaluate the second part of the expression:
+   8 - 1 = 7
+   7 - (-4) = 7 + 4 = 11
+   11 - (-1) = 11 + 1 = 12
+5. Add the results of both parts: -23 + 12 = -11
+
+So, the answer is: {""ANSWER"": -11}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-4 - 5 + 2 + 7) - (-9 * 6 * -1 - -3))","{""ANSWER"": 7}",,"Let's break down the given math expression:
+
+((-4 - 5 + 2 + 7) - (-9 * 6 * -1 - -3))
+
+First, solve the expressions within the innermost parentheses:
+
+-9 * 6 * -1 = 54 (since multiplying two negative numbers gives a positive result)
+- -3 = 3 (since subtracting a negative number is the same as adding a positive number)
+
+So, the expression becomes:
+
+((-4 - 5 + 2 + 7) - (54 + 3))
+
+Next, solve the expressions within the innermost parentheses:
+
+-4 - 5 + 2 + 7 = 0
+
+And,
+
+54 + 3 = 57
+
+Now, the expression becomes:
+
+(0 - 57)
+
+Finally, subtract 57 from 0:
+
+0 - 57 = -57
+
+Therefore, the answer is:
+
+{""ANSWER"": -57}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 + 1 + 6 + 6) - (7 - -7 - 9 - -8))","{""ANSWER"": 25}",," Let's break down the equation step by step:
+
+(8 + 1 + 6 + 6) = 21
+(7 - -7 - 9 - -8) = (7 + 7 - 9 + 8) = 13
+
+Now, subtract 13 from 21:
+
+21 - 13 = 8
+
+So, the answer is: {""ANSWER"": 8}.",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 * -5 - 5 + 7) - (-3 - 8 + 9 * -2))","{""ANSWER"": 30}",,"Let's solve the given math expression step by step.
+
+1. Multiply -9 and -5: (-9 * -5) = 45
+2. Subtract 5: 45 - 5 = 40
+3. Add 7: 40 + 7 = 47
+4. Multiply -3 and -8: (-3 * -8) = 24
+5. Add 9 and -2: (9 * -2) = -18
+6. Subtract -18: 24 - (-18) = 24 + 18 = 42
+7. Subtract 42 from 47: 47 - 42 = 5
+
+So, the final answer is:
+
+ {""ANSWER"": 5}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((0 + 1 - -6 * 9) * (4 + 7 + -9 - 8))","{""ANSWER"": 73}",,"Let's break down the math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (0 + 1 - -6 * 9) = (0 + 1 + 6 * 9) = (0 + 1 + 54) = 55
+   (4 + 7 + -9 - 8) = (4 + 7 - 9 - 8) = -6
+
+2. Multiply the two results:
+   55 * -6 = -330
+
+So, the answer is:
+
+{""ANSWER"": -330}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 + -6 + -3 * -2) * (-9 * -1 + 2 - 3))","{""ANSWER"": 64}",,"Let's break down the given math expression:
+
+((-1 + -6) + (-3 * -2)) * ((-9 * -1) + 2 - 3)
+
+= ((-7) + 6) * (9 + 2 - 3)
+
+= (-1) * 8
+
+= -8
+
+Here's the answer in JSON format:
+
+{""ANSWER"": -8}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((6 * 5 + 0 - -3) * (4 * 5 * 3 + 0))","{""ANSWER"": 2700}",," Let's break down the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses first:
+   (6 * 5 + 0 - -3) = (30 + 0 + 3) = 33
+   (4 * 5 * 3 + 0) = (60 + 0) = 60
+
+2. Now multiply the two results:
+   (33 * 60) = 1980
+
+So, the final answer is:
+ {""ANSWER"": 1980}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-2 * -1 + 1 * -3) - (7 * -7 + -5 * 6))","{""ANSWER"": 40}",,"Let's break down the math problem step by step:
+
+1. Calculate the expressions inside the parentheses:
+   -2 * -1 = 2
+   1 * -3 = -3
+   7 * -7 = -49
+   -5 * 6 = -30
+
+2. Now, add and subtract the results:
+   (2 - 3) - (-49 + (-30))
+   = -1 - (-79)
+   = -1 + 79
+   = 78
+
+So, the final answer is:
+{""ANSWER"": 78}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 + 5 - -1 + 3) + (0 - -3 - -5 * 0))","{""ANSWER"": 8}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -1 + 5 - (-1) + 3 = 8
+   0 - (-3) - (-5 * 0) = 0 - (-3) - 0 = 3
+
+2. Now add the results together:
+   8 + 3 = 11
+
+So the answer is:
+{""ANSWER"": 11}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((0 - 5 + 0 + 3) * (-7 + -8 * 4 - -3))","{""ANSWER"": -21}",,"Let's solve the expression step by step.
+
+First, evaluate the expressions inside the parentheses:
+- (0 - 5 + 0 + 3) = -2
+- (-7 + -8 * 4 - -3) = -7 - 32 + 3 = -36
+
+Now, multiply the two results:
+- (-2) * (-36) = 72
+
+So, the final answer is:
+{""ANSWER"": 72}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-2 - 3 - 0 - 2) * (1 - -7 - -3 + -6))","{""ANSWER"": -160}",,"Let's break down the expression step by step.
+
+First, calculate the expressions inside the parentheses:
+
+(-2 - 3 - 0 - 2) = -9
+(1 - -7 - -3 + -6) = 1 + 7 + 3 - 6 = 5
+
+Now, multiply the two results:
+
+(-9) * 5 = -45
+
+So, the answer is:
+
+{""ANSWER"": -45}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 + 3 - -4 - 2) + (-2 - -7 * -2 * 1))","{""ANSWER"": 5}",,"Let's solve the given math expression step by step.
+
+1. Evaluate the expressions inside the parentheses:
+   (3 + 3 - -4 - 2) = (6 - (-4) - 2) = (6 + 4 - 2) = 8
+
+   (-2 - -7 * -2 * 1) = (-2 - (-7 * -2)) = (-2 - 14) = -16
+
+2. Now, add the two results:
+   8 + (-16) = -8
+
+So, the final answer is -8. 
+
+Here's the response in JSON format:
+
+{""ANSWER"": -8}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 - -8 + 3 * -1) * (-9 * -2 * 4 + -6))","{""ANSWER"": 240}",," Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -9 - (-8) = -9 + 8 = -1
+   3 * (-1) = -3
+   -1 + (-3) = -4
+
+   So, (-9 - (-8 + 3 * -1)) = -4
+
+2. Now, evaluate the second set of parentheses:
+   -9 * -2 * 4 = 72
+   -6 (no calculation needed here)
+
+   So, (-9 * -2 * 4 + -6) = 72 - 6 = 66
+
+3. Multiply -4 by 66:
+   -4 * 66 = -264
+
+So, the final result is -264. Here's the answer in JSON format:
+
+{""ANSWER"": -264}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 - 9 * 6 + 3) * (0 - 8 - -4 - -4))","{""ANSWER"": -49}",,"Let's solve the math question step by step.
+
+1. Multiply 9 and 6: 9 * 6 = 54
+2. Subtract 54 from -1: -1 - 54 = -55
+3. Add 3 to -55: -55 + 3 = -52
+4. Multiply -52 by the result of 0 - 8 - (-4) - (-4)
+   First, calculate 0 - 8 - (-4) - (-4)
+   Subtract 8 from 0: 0 - 8 = -8
+   Add 4 to -8: -8 + 4 = -4
+   Add 4 to -4: -4 + 4 = 0
+   Now, multiply -52 by 0: -52 * 0 = 0
+
+The final result is 0.
+
+Here is the answer in JSON format:
+
+{""ANSWER"": 0}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 - 8 * 9 - 0) + (-4 + 4 + -2 - 0))","{""ANSWER"": -85}",,"Let's break down the expression step by step.
+
+1. Multiply 8 and 9: 8 * 9 = 72
+2. Subtract 72 from -9: -9 - 72 = -81
+3. Add 0 to -81: -81 + 0 = -81
+4. Add 4 to 4: 4 + 4 = 8
+5. Add -2 to 8: 8 - 2 = 6
+6. Add 0 to 6: 6 + 0 = 6
+7. Finally, add -81 to 6: -81 + 6 = -75
+
+So, the final answer is:
+{""ANSWER"": -75}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 - -5 - -9 - -9) * (-6 * 4 - 8 - -9))","{""ANSWER"": 0}",," Let's break it down step by step:
+
+1. Calculate the value inside the parentheses on the left side of the equation: 
+   (-6 - -5 - -9 - -9) 
+   = (-6 + 5 + 9 + 9) 
+   = 17
+
+2. Calculate the value inside the parentheses on the right side of the equation:
+   (-6 * 4 - 8 - -9) 
+   = (-24 - 8 + 9) 
+   = -23
+
+3. Multiply the results from step 1 and step 2:
+   17 * -23 
+   = -391
+
+So, the answer in JSON format is:
+{""ANSWER"": -391}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 + 2 * -1 - -8) - (-8 - 2 - -1 + 6))","{""ANSWER"": 12}",,"Let's break down the equation step by step:
+
+1. 2 * -1 = -2
+2. 1 + (-2) - (-8) = 1 - 2 + 8 = 7
+3. -8 - 2 - (-1) = -8 - 2 + 1 = -9
+4. 7 - (-9) = 7 + 9 = 16
+
+So, the final answer is:
+
+{""ANSWER"": 16}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 * -2 + -2 - -9) + (-9 * 3 * -1 + -1))","{""ANSWER"": 24}",,"Let's break down the expression step by step:
+
+1. Multiply -6 and -2: (-6 * -2) = 12
+2. Subtract 2: 12 - 2 = 10
+3. Add -9: 10 + (-9) = 1
+4. Multiply -9 and 3: (-9 * 3) = -27
+5. Multiply -27 by -1: (-27 * -1) = 27
+6. Add 1: 27 + 1 = 28
+7. Subtract 1: 28 - 1 = 27
+
+Now, let's add the results of the first and second parts of the expression:
+
+1. Add 1 (from step 3) and 27 (from step 6): 1 + 27 = 28
+2. Add 28 (from step 7) and 28: 28 + 28 = 56
+
+The final result is 56.
+
+Here is the JSON response:
+{""ANSWER"": 56}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 * -3 - 2 + -7) + (4 * 8 * -6 - -2))","{""ANSWER"": -23}",,"Let's break down the expression step by step:
+
+1. Multiply -1 and -3: -1 * -3 = 3
+2. Add 2: 3 + 2 = 5
+3. Add -7: 5 + -7 = -2
+4. Multiply 4 and 8: 4 * 8 = 32
+5. Multiply 32 by -6: 32 * -6 = -192
+6. Add -2: -192 + -2 = -194
+7. Add -2 to the previous result: (-2 + -194) = -196
+
+The final result is -196.
+
+Here's the JSON response:
+
+{""ANSWER"": -196}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 + 6 * -1 - -3) * (-5 * 0 - -7 * 1))","{""ANSWER"": 0}",,"Let's solve the math question step by step.
+
+1. First, we need to follow the order of operations (PEMDAS):
+   - Multiply 6 and -1: 6 * -1 = -6
+   - Subtract -3: 8 + (-6) - (-3) = 8 - 6 + 3 = 5
+
+2. Next, multiply -5 and 0: -5 * 0 = 0
+   - Multiply -7 and 1: -7 * 1 = -7
+   - Add 0 and -7: 0 - 7 = -7
+
+3. Now, multiply 5 and -7: 5 * -7 = -35
+
+4. So, the final answer is -35.
+
+Here is the response in JSON format:
+{""ANSWER"": -35}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 - -1 - 7 * 8) * (-1 - -4 * -7 * 2))","{""ANSWER"": 80}",," Let's break it down step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -5 - (-1) = -5 + 1 = -4
+   -4 - 7 * 8 = -4 - 56 = -60
+   -1 - (-4 * -7 * 2) = -1 - (-56) = -1 + 56 = 55
+
+2. Multiply the results:
+   -60 * 55 = -3300
+
+So, the final answer is:
+
+ {""ANSWER"": -3300}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((4 - 8 - -9 * 7) - (5 + -8 * 9 * -2))","To solve the given math expression, we need to follow the order of operations (PEMDAS):
+
+1. Multiply 9 and 7: 9 * 7 = 63
+2. Subtract 63 from 4: 4 - 63 = -59
+3. Multiply 8 and -9: 8 * -9 = -72
+4. Subtract -72 from -59: -59 - (-72) = 13
+5. Multiply 8, 9, and -2: 8 * 9 * -2 = -144
+6. Add 5 and -144: 5 + -144 = -139
+7. Subtract -139 from 13: 13 - (-139) = 152
+
+So, the final result is: {""ANSWER"": 152}",,"Let's solve the given math expression step by step:
+
+1. Multiply 9 and 7: 9 * 7 = 63
+2. Subtract 8 from 4: 4 - 8 = -4
+3. Add -9 to -4: -4 - 9 = -13
+4. Multiply 8 by -2: 8 * -2 = -16
+5. Multiply -8 by -16: -8 * -16 = 128
+6. Add 5 to 128: 5 + 128 = 133
+7. Subtract 133 from -13: -13 - 133 = -146
+
+The final answer is: {""ANSWER"": -146}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 - -8 + 5 - -4) + (6 - -6 * 4 - 3))","{""ANSWER"": 24}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -7 - (-8) = -7 + 8 = 1
+   5 - (-4) = 5 + 4 = 9
+   (1) + (9) = 10
+   6 - (-6 * 4) = 6 + 24 = 30
+   30 - 3 = 27
+   (10) + (27) = 37
+
+2. Now, add the results of the two expressions:
+   37
+
+So, the final answer is:
+
+ {""ANSWER"": 37}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-3 * 4 * 3 + -5) + (-7 - 5 + 7 * -4))","{""ANSWER"": -74}",,"Let's break down the given expression step by step:
+
+1. Multiply -3 and 4: -3 * 4 = -12
+2. Multiply -12 by 3: -12 * 3 = -36
+3. Add -5 to -36: -36 + -5 = -41
+4. Subtract 7 from -41: -41 - 7 = -48
+5. Subtract 5 from -48: -48 - 5 = -53
+6. Multiply 7 by -4: 7 * -4 = -28
+7. Add -28 to -53: -53 + -28 = -81
+
+So, the final result is -81.
+
+Here's the JSON response:
+{""ANSWER"": -81}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-2 - 1 - -6 + -9) - (4 * 8 + -8 * 5))","{""ANSWER"": -16}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -2 - 1 - (-6) + (-9)
+   First, simplify the expression with the negative sign outside the parentheses:
+   -2 - 1 + 6 - 9
+   Then, perform the subtractions from left to right:
+   -2 - 1 = -3
+   -3 + 6 = 3
+   3 - 9 = -6
+
+   4 * 8 + (-8 * 5)
+   First, perform the multiplications:
+   4 * 8 = 32
+   -8 * 5 = -40
+   Then, perform the additions and subtractions from left to right:
+   32 + (-40) = -8
+
+2. Now, subtract the second expression from the first:
+   -6 - (-8)
+   When subtracting a negative number, it's equivalent to adding the positive of that number:
+   -6 + 8 = 2
+
+So, the final result is 2.
+
+Here is the JSON response:
+
+{""ANSWER"": 2}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-2 * 4 - 3 - 3) - (-9 * -3 - -8 * 6))","{""ANSWER"": -1}",," Let's solve the given math expression.
+
+First, calculate the expressions inside the parentheses:
+
+-2 * 4 = -8
+-8 - 3 - 3 = -14
+
+-9 * -3 = 27
+-8 * 6 = -48
+27 - (-48) = 75
+
+Now, subtract the two results:
+
+-14 - 75 = -89
+
+So, the answer is -89.
+
+Here's the response in the requested format:
+
+{""ANSWER"": -89}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-4 + -6 + -6 - -9) + (-2 * -5 * 5 * 7))","{""ANSWER"": 17}",,"Let's break down the equation step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -4 + -6 = -10
+  -10 + -6 = -16
+  -16 + -9 = -25
+
+2. Now, let's calculate the multiplication inside the second set of parentheses:
+  -2 * -5 = 10
+  10 * 5 = 50
+  50 * 7 = 350
+
+3. Now, let's add the results from step 1 and step 2:
+  -25 + 350 = 325
+
+So, the answer is:
+
+{""ANSWER"": 325}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 * 5 + 1 - 4) + (9 * 0 - -7 - 3))","{""ANSWER"": 16}",,"Let's break down the expression step by step.
+
+1. Evaluate the expressions inside the parentheses:
+   -5 * 5 = -25
+   -25 + 1 = -24
+   -24 - 4 = -28
+
+   So, the first parentheses evaluates to -28.
+
+   -9 * 0 = 0
+   0 - (-7) = 0 + 7 = 7
+   7 - 3 = 4
+
+   So, the second parentheses evaluates to 4.
+
+2. Add the results of both parentheses:
+   -28 + 4 = -24
+
+So, the final answer is -24. 
+
+Here is the JSON response:
+{""ANSWER"": -24}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 - -8 + 0 - -3) + (-3 + -4 + 1 + 2))","{""ANSWER"": 12}",,"Let's break down the expression step by step.
+
+First, simplify the inner parentheses:
+(1 - (-8) + 0 - (-3)) = (1 + 8 + 0 + 3) = 12
+
+Next, simplify the outer parentheses:
+(12 + (-3 + -4 + 1 + 2)) = (12 + (-6 + 3)) = (12 + (-3)) = 9
+
+So, the final answer is:
+{""ANSWER"": 9}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 - -5 + -9 + 7) + (-9 * -1 * -6 + 4))","{""ANSWER"": 0}",,"Let's break down the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - First, calculate 8 - -5: 8 - (-5) = 8 + 5 = 13
+   - Then, calculate -9 + -9: -9 + (-9) = -18
+   - Next, calculate -18 + 7: -18 + 7 = -11
+
+   So, (8 - -5 + -9 + 7) = -11
+
+2. Evaluate the second expression inside the parentheses:
+   - First, calculate -9 * -1: -9 * (-1) = 9
+   - Then, calculate 9 * -6: 9 * (-6) = -54
+   - Next, calculate -54 + 4: -54 + 4 = -50
+
+   So, (-9 * -1 * -6 + 4) = -50
+
+3. Now, add the results of the two expressions:
+   - (-11) + (-50) = -61
+
+Therefore, the final answer is:
+
+ {""ANSWER"": -61}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((0 * 3 - -9 + -1) - (-5 * -6 - 6 + 8))","{""ANSWER"": 25}",,"Let's solve the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (0 * 3 - -9 + -1) = (0 - (-9) + -1) = (0 + 9 - 1) = 8
+   (-5 * -6 - 6 + 8) = (30 - 6 + 8) = 32
+
+2. Now, subtract the second result from the first:
+   8 - 32 = -24
+
+So, the answer is -24.
+
+Here's the response in the required JSON format:
+
+{""ANSWER"": -24}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-4 + -9 + -7 * 8) - (-8 + 0 * -5 + -1))","{""ANSWER"": 30}",,"Let's solve the expression step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply -7 and 8: -7 * 8 = -56
+2. Add -4, -9, and -56: -4 + -9 + -56 = -69
+3. Multiply 0 and -5: 0 * -5 = 0
+4. Add -8, 0, and -1: -8 + 0 + -1 = -9
+5. Subtract -9 from -69: -69 - (-9) = -69 + 9 = -60
+
+So, the final answer is:
+
+{""ANSWER"": -60}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((7 + -7 * 9 * 5) - (-2 + -6 - -8 * -2))","{""ANSWER"": 4}",,"Let's solve the math problem step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply -7 and 9: -7 * 9 = -63
+2. Multiply -63 and 5: -63 * 5 = -315
+3. Add 7 and -315: 7 + (-315) = -308
+4. Multiply -8 and -2: -8 * -2 = 16
+5. Add -6 and 16: -6 + 16 = 10
+6. Subtract 10 from -308: -308 - 10 = -318
+
+So, the final answer is:
+
+{""ANSWER"": -318}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-4 - -8 + 2 + -8) * (-3 * 0 + 4 * 1))","{""ANSWER"": -12}",,"Let's break down the expression step by step.
+
+1. Evaluate the expressions inside the parentheses:
+   -4 - (-8) = -4 + 8 = 4
+   4 + 2 = 6
+   -8 + (-8) = -8 + (-8) = -16
+   So, (-4 - -8 + 2 + -8) = 4 + 6 - 16 = -6
+
+2. Evaluate the expressions inside the second parentheses:
+   -3 * 0 = 0
+   4 * 1 = 4
+   -3 * 0 + 4 * 1 = 0 + 4 = 4
+
+3. Multiply the results of the two expressions:
+   (-6) * 4 = -24
+
+Therefore, the answer is:
+
+{""ANSWER"": -24}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 - 9 - 3 - 4) + (1 * -2 * -3 - -3))","{""ANSWER"": -4}",," Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (3 - 9) = -6
+   (-6 - 3) = -9
+   (-9 - 4) = -13
+   (1 * -2) = -2
+   (-2 * -3) = 6
+   (6 - (-3)) = 9
+
+2. Now, add the results:
+   (-13) + 9 = -4
+
+So, the final answer is -4. 
+
+Here is the JSON response:
+{""ANSWER"": -4}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 * -4 + 1 + -1) * (-1 + 2 * 7 + 2))","{""ANSWER"": 80}",," Let's break down the expression step by step:
+
+1. Multiply -6 and -4: (-6 * -4) = 24
+2. Add 1: 24 + 1 = 25
+3. Subtract 1: 25 - 1 = 24
+4. Multiply 24 by the result of (-1 + 2 * 7 + 2)
+   a. Multiply 2 and 7: 2 * 7 = 14
+   b. Add 1: 14 + 1 = 15
+   c. Subtract 1: 15 - 1 = 14
+   d. Multiply 24 by 14: 24 * 14 = 336
+
+Therefore, the final result is 336.
+
+ {""ANSWER"": 336}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 * -3 - 8 - 5) + (1 * -2 - -4 * 5))","{""ANSWER"": -11}",," Let's break down the given math expression and solve it step by step.
+
+ Expression: (-9 * -3 - 8 - 5) + (1 * -2 - -4 * 5)
+
+ Step 1: Multiply -9 and -3
+ (-9 * -3) = 27
+
+ Step 2: Add -8 and -5
+ (-8 - 5) = -13
+
+ Step 3: Add 27 and -13
+ (27 - 13) = 14
+
+ Step 4: Multiply 1 and -2
+ (1 * -2) = -2
+
+ Step 5: Multiply -4 and 5
+ (-4 * 5) = -20
+
+ Step 6: Add -2 and -20
+ (-2 - 20) = -22
+
+ Step 7: Add the results from step 3 and step 6
+ (14 + (-22)) = -8
+
+ Therefore, the final result is -8.
+
+ {""ANSWER"": -8}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 + -6 * -2 + 7) * (-6 - -4 - -6 + 6))","{""ANSWER"": -24}",,"Let's break down the math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -6 * -2 = 12
+   3 + 12 + 7 = 20
+
+2. Now, let's evaluate the second set of parentheses:
+   -6 - -4 - -6 + 6 = -6 + 4 + 6 = 4
+
+3. Now multiply the results of the two expressions:
+   20 * 4 = 80
+
+So, the final answer is: {""ANSWER"": 80}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 * 2 + -4 * -8) - (-5 * 0 * 1 * 5))","{""ANSWER"": 34}",,"Let's break down the expression step by step.
+
+First, calculate the expressions inside the parentheses:
+
+(-7 * 2) = -14
+(-4 * -8) = 32
+(-5 * 0 * 1 * 5) = 0 (since any number multiplied by 0 is 0)
+
+Now, substitute these values back into the expression:
+
+((-7 * 2 + -4 * -8) - (-5 * 0 * 1 * 5))
+= ((-14 + 32) - 0)
+= (18 - 0)
+= 18
+
+So, the answer is:
+
+{""ANSWER"": 18}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-4 * 4 + -1 * 5) - (-6 + 1 - -8 - 6))","{""ANSWER"": 26}",,"Let's break down the given math expression:
+
+((-4 * 4 + -1 * 5) - (-6 + 1 - -8 - 6))
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply:
+   -4 * 4 = -16
+   -1 * 5 = -5
+
+So, the expression becomes:
+((-16 + -5) - (-6 + 1 - -8 - 6))
+
+2. Add and subtract inside the parentheses:
+-16 + -5 = -21
+-6 + 1 = -5
+- -8 = 8
+-6 = -6
+
+Now, the expression becomes:
+((-21) - (-5 + 8 - 6))
+
+3. Add and subtract inside the parentheses:
+-5 + 8 = 3
+3 - 6 = -3
+
+Now, the expression becomes:
+((-21) - (-3))
+
+4. Subtract:
+-(-3) = 3
+-21 - 3 = -24
+
+So, the final answer is:
+{""ANSWER"": -24}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((7 - -9 + 0 - 0) + (-9 + 5 - -9 * -1))","{""ANSWER"": 3}",,"Let's solve the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (7 - (-9) + 0 - 0) = (7 + 9) = 16
+   (-9 + 5 - (-9 * -1)) = (-9 + 5 - 9) = -13
+
+2. Now, add the results of the two expressions:
+   16 + (-13) = 16 - 13 = 3
+
+So, the final answer is:
+
+ {""ANSWER"": 3}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((4 + 3 + -9 + -2) * (7 * 2 + 8 - 1))","{""ANSWER"": 32}",,"Let's solve the given math expression step by step.
+
+First, calculate the expressions inside the parentheses:
+
+(4 + 3 - 9 - 2) = (7 - 9 - 2) = (7 - 11) = -4
+
+(7 * 2 + 8 - 1) = (14 + 8 - 1) = (22 - 1) = 21
+
+Now, multiply the two results:
+
+(-4) * 21 = -84
+
+So, the final answer is:
+
+{""ANSWER"": -84}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 - 1 + -3 * -4) - (8 * 9 - -7 - -6))","{""ANSWER"": 28}",,"Let's solve the math expression step by step.
+
+1. Evaluate the expressions inside the parentheses:
+   - (3 - 1 + -3 * -4) = (2 + 12) = 14
+   - (8 * 9 - -7 - -6) = (72 + 7 + 6) = 85
+
+2. Now, subtract the second expression from the first one:
+   - 14 - 85 = -71
+
+So, the final answer is:
+
+{""ANSWER"": -71}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 * -7 * -8 - -2) + (-5 - 2 + 0 + -2))","{""ANSWER"": 264}",,"Let's break down the expression step by step:
+
+1. Multiply the first set of numbers: (-6 * -7 * -8) = -336
+2. Multiply the last set of numbers: (- -2) = 2
+3. Add the results of steps 1 and 2: -336 + 2 = -334
+4. Now, let's evaluate the expression inside the second parentheses: (-5 - 2 + 0 + -2)
+5. Subtract 5 and 2: -5 - 2 = -7
+6. Add 0: -7 + 0 = -7
+7. Add -2: -7 + -2 = -9
+8. Add the result of step 4 to the result of step 7: -334 + -9 = -343
+
+So, the final result is: {""ANSWER"": -343}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 * 7 * -4 + 7) * (-5 - -6 + -8 * -5))","{""ANSWER"": -2808}",,"Let's break down the math expression step by step:
+
+1. Multiply 5 and 7: 5 * 7 = 35
+2. Multiply 35 by -4: 35 * -4 = -140
+3. Add 7 to -140: -140 + 7 = -133
+4. Multiply -133 by -5: -133 * -5 = 665
+5. Add -6 to -5: -5 + -6 = -11
+6. Multiply -11 by -8: -11 * -8 = 88
+7. Add 88 to -5: -5 + 88 = 83
+8. Multiply -133 by 83: -133 * 83 = -11099
+
+So, the final result is:
+
+{""ANSWER"": -11099}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((4 - 2 * 2 + 3) + (-3 - -9 - -4 - 5))","{""ANSWER"": 5}",," Let's break it down step by step:
+
+1. Calculate the multiplication: 2 * 2 = 4
+2. Subtract 4 from 4: 4 - 4 = 0
+3. Add 3 to 0: 0 + 3 = 3
+4. Calculate the expressions inside the second parentheses: 
+   -3 - (-9) = -3 + 9 = 6
+   -6 - (-4) = -6 + 4 = -2
+   -2 - 5 = -7
+5. Add 3 and -7: 3 + (-7) = -4
+
+So, the final answer is: {""ANSWER"": -4}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 - 7 - -3 + -9) - (-6 * -6 + -4 * -4))","{""ANSWER"": 8}",,"Let's break down the math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (8 - 7 - -3 + -9) = (1 - -3 + -9) = (1 + 3 - 9) = -5
+   (-6 * -6 + -4 * -4) = (36 + 16) = 52
+
+2. Now subtract the second result from the first:
+   -5 - 52 = -57
+
+So, the final answer is:
+
+ {""ANSWER"": -57}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 + 9 + -9 * -4) - (-7 * 6 - 7 * 3))","{""ANSWER"": 32}",," Let's solve the expression step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply -9 and -4: -9 * -4 = 36
+2. Add 7 and 9: 7 + 9 = 16
+3. Subtract 36 from 16: 16 - 36 = -20
+4. Multiply -7 and 6: -7 * 6 = -42
+5. Multiply -7 and 3: -7 * 3 = -21
+6. Subtract -42 and -21: -42 - (-21) = -42 + 21 = -21
+7. Subtract -21 from -20: -20 - (-21) = -20 + 21 = 1
+
+So, the final result is 1.
+
+Here's the JSON response:
+
+{""ANSWER"": 1}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 * -2 + 6 - -8) - (-2 * -4 * 8 + 5))","{""ANSWER"": 44}",,"Let's solve the given math expression step by step:
+
+1. Multiply -6 and -2: -6 * -2 = 12
+2. Add 6: 12 + 6 = 18
+3. Add -8: 18 + (-8) = 10
+4. Multiply -2 and -4: -2 * -4 = 8
+5. Multiply 8 by 8: 8 * 8 = 64
+6. Add 5: 64 + 5 = 69
+7. Subtract 69 from 10: 10 - 69 = -59
+
+The final result is -59.
+
+Here's the answer in JSON format:
+{""ANSWER"": -59}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 + 5 * 4 + 9) - (-7 - 6 * -8 - 0))","{""ANSWER"": 24}",," Let's break down the expression step by step:
+
+1. Multiply 5 and 4: 5 * 4 = 20
+2. Add -1 and 20: -1 + 20 = 19
+3. Multiply -6 and -8: -6 * -8 = 48
+4. Add 48 and 0: 48 + 0 = 48
+5. Subtract -7 from 48: 48 - (-7) = 48 + 7 = 55
+6. Subtract 55 from 19: 19 - 55 = -36
+
+So, the expression evaluates to -36.
+
+Here is the JSON response:
+{""ANSWER"": -36}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-4 + -2 + -6 + -1) + (-4 * 2 + -5 * 8))","{""ANSWER"": -27}",," Let's break down the expression:
+
+((-4 + -2 + -6 + -1) + (-4 * 2 + -5 * 8))
+
+First, calculate the expressions inside the parentheses:
+
+-4 + -2 + -6 + -1 = -13
+-4 * 2 = -8
+-5 * 8 = -40
+
+Now, add the results:
+
+-13 + (-8 + (-40)) = -13 + (-48) = -61
+
+So, the answer is:
+
+{""ANSWER"": -61}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 - -1 - -2 * -7) + (3 + 2 - 3 * 3))","{""ANSWER"": 48}",,"Let's solve the math expression step by step:
+
+1. Multiply -2 and -7: -2 * -7 = 14
+2. Subtract 14 from -8: -8 - 14 = -22
+3. Subtract 1: -22 - 1 = -23
+4. Add -23: -23 + (-23) = -46 (because two negative numbers become a positive number when added)
+5. Multiply 3 and 3: 3 * 3 = 9
+6. Add 3 and 2: 3 + 2 = 5
+7. Subtract 9 from 5: 5 - 9 = -4
+8. Add -46 and -4: -46 + (-4) = -50
+
+So, the final answer is: {""ANSWER"": -50}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((4 + 5 - 7 + 9) * (-1 - -4 + -7 - -5))","{""ANSWER"": -8}",,"Let's solve the given math expression step by step.
+
+First, calculate the expressions inside the parentheses:
+
+(4 + 5 - 7 + 9) = 11
+(-1 - -4 + -7 - -5) = -1
+
+Now, multiply the results:
+
+11 * (-1) = -11
+
+So, the final result is -11.
+
+Here is the JSON response:
+
+{""ANSWER"": -11}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((7 + 7 * 3 - 3) - (-3 + 4 - -6 + -3))","{""ANSWER"": 23}",,"Let's break down the math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - 7 * 3 = 21
+   - 7 + 21 = 28
+   - 3 - 3 = 0
+   - So, (7 + 7 * 3 - 3) = 28 - 0 = 28
+
+2. Now, evaluate the expressions inside the second set of parentheses:
+   - -3 + 4 = 1
+   - -1 + -6 = -7
+   - -7 - 3 = -10
+
+3. Now, subtract the result of the second set of parentheses from the first set:
+   - 28 - (-10) = 28 + 10 = 38
+
+So, the final answer is:
+{""ANSWER"": 38}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-4 + 5 - 4 - -6) * (-3 * -1 * 2 - -4))","{""ANSWER"": 40}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -4 + 5 = 1
+   1 - 4 = -3
+   -3 - (-6) = -3 + 6 = 3
+
+2. Now we have: (3 * (-3 * -1 * 2 - -4))
+
+3. Evaluate the multiplication inside the parentheses:
+   -3 * -1 * 2 = 6
+   6 - (-4) = 6 + 4 = 10
+
+4. Now we have: (3 * 10)
+
+5. Multiply 3 and 10:
+   3 * 10 = 30
+
+So, the answer is: {""ANSWER"": 30}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((2 + 7 - -5 - 1) - (0 - 5 - 9 + 0))","{""ANSWER"": 10}",,"Let's solve the expression step by step.
+
+((2 + 7 - -5 - 1) - (0 - 5 - 9 + 0))
+
+First, let's simplify the expressions inside the parentheses:
+
+(2 + 7 - (-5) - 1) 
+= (2 + 7 + 5 - 1) 
+= (14 - 1) 
+= 13
+
+(0 - 5 - 9 + 0) 
+= (-5 - 9) 
+= -14
+
+Now, subtract the second expression from the first:
+
+13 - (-14) 
+= 13 + 14 
+= 27
+
+So, the final answer is:
+
+{""ANSWER"": 27}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((4 * -4 + -6 - -2) - (9 + -7 + -8 * 6))","{""ANSWER"": -17}",,"Let's break down the equation step by step.
+
+First, let's calculate the expressions inside the parentheses:
+
+(4 * -4) = -16
+-16 + -6 = -22
+-22 + 2 = -20
+
+So, the first parentheses evaluates to -20.
+
+Now, let's calculate the second parentheses:
+
+(9 + -7) = 2
+-8 * 6 = -48
+2 + (-48) = -46
+
+So, the second parentheses evaluates to -46.
+
+Now, let's subtract the second result from the first result:
+
+-20 - (-46) = -20 + 46 = 26
+
+Therefore, the final answer is:
+
+{""ANSWER"": 26}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 - 2 - 3 * 3) + (-8 * -1 * -9 * 3))","{""ANSWER"": 10}",,"Let's break down the expression step by step.
+
+1. Follow the order of operations (PEMDAS):
+   - First, calculate the multiplication: 3 * 3 = 9
+   - Then, calculate the subtraction: 3 - 2 = 1, 1 - 9 = -8
+   - Next, calculate the multiplication: -8 * -1 = 8, 8 * -9 = -72, -72 * 3 = -216
+
+2. Now, calculate the addition: -8 + (-216) = -224
+
+So, the final answer is:
+
+{""ANSWER"": -224}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 * -5 - -3 + -9) + (-5 - 3 * -2 - 5))","{""ANSWER"": 0}",," Let's break down the math problem step by step.
+
+First, let's calculate the expressions inside the parentheses:
+
+1. -1 * -5 = 5
+2. - -3 = 3
+3. -9 + 3 = -6
+4. -5 * -2 = 10
+5. -5 + 10 = 5
+
+Now, let's add the results:
+
+6. (-6) + 5 = -1
+
+The expression inside the second set of parentheses is:
+
+7. -3 * -2 = 6
+8. -5 + 6 = 1
+9. 1 + 5 = 6
+
+Now, let's add the results of both expressions:
+
+10. (-1) + 6 = 5
+
+So, the final answer is:
+
+{""ANSWER"": 5}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 * -1 - 7 * 5) - (6 - -5 * 3 * 7))","{""ANSWER"": -32}",,"Let's solve the given math expression step by step:
+
+1. Multiply 5 and -1: 5 * -1 = -5
+2. Multiply 7 and 5: 7 * 5 = 35
+3. Subtract 35 from -5: -5 - 35 = -40
+4. Multiply -5 and 3: -5 * 3 = -15
+5. Multiply -15 and 7: -15 * 7 = -105
+6. Subtract -105 from 6: 6 - (-105) = 6 + 105 = 111
+7. Subtract -40 from 111: 111 - (-40) = 111 + 40 = 151
+
+So, the result of the given expression is 151.
+
+Here's the JSON response:
+
+{""ANSWER"": 151}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((9 - -5 - 1 + -2) * (-5 * 3 - -5 - 0))","{""ANSWER"": -14}",," Let's break down the given expression:
+
+((9 - -5 - 1 + -2) * (-5 * 3 - -5 - 0))
+
+First, simplify the expressions inside the parentheses:
+
+(9 - (-5) - 1 + (-2))
+= (9 + 5 - 1 - 2)
+= 11
+
+(-5 * 3 - (-5) - 0)
+= (-15 + 5 - 0)
+= -10
+
+Now, multiply the two simplified expressions:
+
+(11) * (-10)
+= -110
+
+So, the final answer is:
+
+ {""ANSWER"": -110}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 - -3 * 5 + 4) * (2 * 7 - -3 - -1))","{""ANSWER"": -22}",,"Let's break down the math expression step by step:
+
+1. Multiply -3 and 5: -3 * 5 = -15
+2. Add -8 and -15: -8 + (-15) = -23
+3. Add 4 to the result: -23 + 4 = -19
+4. Multiply -19 by 2: -19 * 2 = -38
+5. Multiply 7 by -3: 7 * (-3) = -21
+6. Add -21 and -1: -21 + (-1) = -22
+7. Add -38 and -22: -38 + (-22) = -60
+
+So, the final result is -60. Here's the JSON response:
+
+{""ANSWER"": -60}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 - 7 + -6 + 4) * (2 - -9 + 3 - 6))","{""ANSWER"": -16}",,"Let's solve the given math expression step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Evaluate the expressions inside the parentheses:
+   (5 - 7 + -6 + 4) = -4
+   (2 - -9 + 3 - 6) = 8
+
+2. Now, multiply the results:
+   (-4) * 8 = -32
+
+So, the final answer is -32.
+
+Here's the response in the required JSON format:
+
+{""ANSWER"": -32}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 - -1 - 6 * 0) + (-3 + 5 * 0 + 1))","{""ANSWER"": 5}",," Let's solve the given math equation step by step.
+
+First, calculate the multiplication operations:
+- 6 * 0 = 0
+- 5 * 0 = 0
+- -5 - -1 = -5 + 1 = -4
+
+Now, replace the multiplication operations in the equation with their results:
+((-4 - 6 * 0) + (-3 + 0 + 1))
+
+Next, calculate the multiplication operation again:
+- 6 * 0 = 0
+
+Now, replace the multiplication operation in the equation with its result:
+((-4 - 0) + (-3 + 0 + 1))
+
+Now, calculate the addition and subtraction operations from left to right:
+- (-4 - 0) = -4
+- (-3 + 0 + 1) = -2
+
+Now, replace the addition and subtraction operations in the equation with their results:
+- -4 + -2 = -6
+
+So, the final result is -6.
+
+Here's the JSON response:
+{""ANSWER"": -6}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-3 - 9 - 3 - 1) + (-4 * -9 * -7 - -6))","{""ANSWER"": -16}",," Let's break down the given expression step by step:
+
+((-3 - 9 - 3 - 1) + (-4 * -9 * -7 - -6))
+
+First, calculate the expressions inside the parentheses:
+
+(-3 - 9 - 3 - 1) = -16
+
+(-4 * -9 * -7 - -6) = (-4 * -9 * -7) + 6 (since two negative signs make a positive)
+
+Now, calculate the product:
+
+(-4 * -9 * -7) = -252
+
+Now, add 6:
+
+-252 + 6 = -246
+
+Now, add -16 and -246:
+
+-16 + (-246) = -262
+
+So, the final answer is:
+
+ {""ANSWER"": -262}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 * -1 + 5 * -4) + (-2 - 5 * 4 - 5))","{""ANSWER"": -14}",,"Let's break down the given math expression step by step:
+
+1. Calculate the expressions inside the parentheses:
+   - 1 * -1 = -1
+   - 5 * -4 = -20
+   - -2 - 5 * 4 = -2 - 20 = -22
+   - -22 - 5 = -27
+
+2. Now, add the results of the expressions:
+   - (-1 + -20) = -21
+   - -21 + -27 = -48
+
+So, the final result of the given expression is -48. 
+
+Here's the JSON response:
+{""ANSWER"": -48}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-3 - -8 - -7 + -2) - (-2 - 8 + -1 - -6))","{""ANSWER"": 12}",,"Let's break down the expression step by step:
+
+((-3 - -8 - -7 + -2) - (-2 - 8 + -1 - -6))
+
+First, simplify the expressions inside the parentheses:
+
+(-3 - -8) = -3 + 8 = 5
+(-7 + -2) = -7 + (-2) = -9
+(-2 - 8 + -1 - -6) = -2 - 8 - 1 + 6 = -5
+
+Now, substitute these values back into the original expression:
+
+(5 - -9 - -5)
+
+Next, simplify the expression:
+
+(5 + 9) = 14
+(-5) = -5
+14 - (-5) = 14 + 5 = 19
+
+So, the final answer is:
+
+{""ANSWER"": 19}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 * -6 + 3 * -3) - (-1 + -8 * 8 * -9))","{""ANSWER"": 118}",,"Let's break down the expression step by step:
+
+1. Multiply -5 and -6: -5 * -6 = 30
+2. Multiply 3 and -3: 3 * -3 = -9
+3. Add 30 and -9: 30 + (-9) = 21
+4. Multiply -8 and 8: -8 * 8 = -64
+5. Multiply -64 and -9: -64 * -9 = 576
+6. Add -1 and 576: -1 + 576 = 575
+7. Subtract 575 from 21: 21 - 575 = -554
+
+So, the final result is -554.
+
+Here's the JSON response:
+
+{""ANSWER"": -554}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 - -7 - 4 - 8) - (-4 + 4 + 1 + 0))","{""ANSWER"": 25}",,"Let's solve the given math expression step by step.
+
+First, let's evaluate the expressions inside the parentheses:
+
+1. (-5 - -7 - 4 - 8)
+   = (-5 + 7 - 4 - 8)
+   = (2 - 4 - 8)
+   = (-2 - 8)
+   = -10
+
+2. (-4 + 4 + 1 + 0)
+   = (0 + 1 + 0)
+   = 1
+
+Now, let's subtract the second expression from the first:
+
+(-10) - 1
+= -11
+
+So, the final result is -11.
+
+Here's the response in JSON format:
+
+{""ANSWER"": -11}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((9 + 7 - 4 - 7) - (-5 + 6 + -1 * 0))","{""ANSWER"": 12}",," Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (9 + 7 - 4 - 7) = 5
+   (-5 + 6 + -1 * 0) = (-5 + 6) = 1
+
+2. Now subtract 1 from 5:
+   5 - 1 = 4
+
+3. So the final answer is 4.
+
+Here's the JSON response:
+{""ANSWER"": 4}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 * -6 + -9 + 9) * (0 - 4 - 0 - -9))","{""ANSWER"": -1152}",," Let's break down the expression step by step.
+
+1. Evaluate the expressions inside the parentheses:
+   (8 * -6) = -48
+   (-9 + 9) = 0
+   (0 - 4 - 0 - (-9)) = (0 - 4 - 0 + 9) = 5
+
+2. Now multiply the two results:
+   (-48 + 0) * 5 = (-48) * 5 = -240
+
+So, the answer is: {""ANSWER"": -240}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-4 * 1 + 8 + 9) * (7 * -6 * -5 - 6))","{""ANSWER"": 80}",,"Let's solve the math problem step by step:
+
+1. Calculate the expressions inside the parentheses:
+   -4 * 1 = -4
+   -4 + 8 = 4
+   4 + 9 = 13
+   7 * -6 = -42
+   -42 * -5 = 210
+   210 - 6 = 204
+
+2. Multiply the two results:
+   13 * 204 = 2628
+
+So, the answer is:
+
+{""ANSWER"": 2628}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 - 6 * 2 + 4) - (1 - 9 - 0 * 5))","{""ANSWER"": -16}",,"Let's solve the math problem step by step.
+
+1. Multiply 6 and 2: 6 * 2 = 12
+2. Subtract 12 from -5: -5 - 12 = -17
+3. Add 4 to -17: -17 + 4 = -13
+4. Multiply 0 and 5: 0 * 5 = 0
+5. Subtract 1 from 9: 9 - 1 = 8
+6. Add 0 to 8: 8 + 0 = 8
+7. Subtract 8 from -13: -13 - 8 = -21
+
+So, the solution is: {""ANSWER"": -21}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 - 1 + 3 * -2) + (0 - 4 + 6 + 1))","{""ANSWER"": -15}",,"Let's solve the given math expression step by step.
+
+The expression is: (-7 - 1 + 3 * -2) + (0 - 4 + 6 + 1)
+
+First, follow the order of operations (PEMDAS):
+
+1. Multiply 3 and -2: 3 * -2 = -6
+2. Subtract 1 from -7: -7 - 1 = -8
+3. Add -6 to -8: -8 + (-6) = -14
+4. Subtract 4 from 0: 0 - 4 = -4
+5. Add 6 to -4: -4 + 6 = 2
+6. Add 1 to 2: 2 + 1 = 3
+
+Now, add the results of the two expressions: -14 + 3 = -11
+
+So, the final answer is:
+
+ {""ANSWER"": -11}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((7 * 2 + 4 - -6) * (6 - 7 - 7 * -2))","{""ANSWER"": -24}",," Let's solve the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (7 * 2 + 4 - -6) = (14 + 4 + 6) = 24
+   (6 - 7 - 7 * -2) = (6 - 7 + 14) = 13
+
+2. Multiply the results:
+   24 * 13 = 312
+
+So, the answer is:
+{""ANSWER"": 312}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 * -9 + 1 * 7) - (0 + 3 * 5 - 2))","{""ANSWER"": 48}",," Let's break it down step by step:
+
+1. Multiply -6 and -9: -6 * -9 = 54
+2. Multiply 1 and 7: 1 * 7 = 7
+3. Add 54 and 7: 54 + 7 = 61
+4. Multiply 0 and 3: 0 * 3 = 0
+5. Multiply 3 and 5: 3 * 5 = 15
+6. Add 0 and 15: 0 + 15 = 15
+7. Subtract 2 from 15: 15 - 2 = 13
+8. Subtract 13 from 61: 61 - 13 = 48
+
+ANSWER: 48",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 - -1 + -8 + -3) * (-4 * 6 - 2 - 3))","{""ANSWER"": -70}",," Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - (-8 - -1) = -8 + 1 = -7
+   - (-8 + -3) = -8 + (-3) = -11
+   - (-4 * 6) = -24
+
+2. Now, let's rewrite the expression with the evaluated expressions:
+   (-7 + (-11) * (-24 - 2 - 3))
+
+3. Evaluate the expressions inside the second set of parentheses:
+   - (-24 - 2 - 3) = -24 - 2 - 3 = -29
+
+4. Now, let's rewrite the expression with the evaluated expressions:
+   (-7 + (-11) * (-29))
+
+5. Multiply (-11) and (-29):
+   - (-11) * (-29) = -11 * 29 = -319
+
+6. Now, let's rewrite the expression with the evaluated expression:
+   (-7 + (-319))
+
+7. Finally, add (-7) and (-319):
+   -7 + (-319) = -7 - 319 = -326
+
+So, the final result is:
+
+{""ANSWER"": -326}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((0 * -4 - -7 * 5) + (-4 * 0 + 6 + 0))","{""ANSWER"": 27}",,"Let's break down the math expression:
+
+((0 * -4 - -7 * 5) + (-4 * 0 + 6 + 0))
+
+= ((0 - 0) + (0 + 6 + 0))
+
+= (0 + 6)
+
+= 6
+
+So, the answer is:
+
+{""ANSWER"": 6}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((9 * -9 + -4 * -8) - (5 * 0 + 8 - 5))","{""ANSWER"": -31}",," Let's break down the expression step by step:
+
+(9 * -9 + -4 * -8) - (5 * 0 + 8 - 5)
+
+= (-81 + 32) - (0 + 8 - 5)
+
+= (-49) - (0 + 3)
+
+= (-49) - 3
+
+= -52
+
+So, the answer is -52.
+
+Here's the JSON response:
+
+{""ANSWER"": -52}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 + -9 - -6 + -1) + (-8 * 5 * -6 + 7))","{""ANSWER"": 24}",,"Let's break down the problem step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -6 + -9 = -15
+   -15 + -6 = -21
+   -21 + -1 = -22
+
+2. Evaluate the multiplication inside the second parentheses:
+   -8 * 5 = -40
+   -40 * -6 = 240
+
+3. Add the results from steps 1 and 2:
+   -22 + 240 = 218
+
+So, the final result is 218.
+
+Here's the JSON response:
+
+{""ANSWER"": 218}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 + 4 + 7 - 6) - (-8 * 0 - 9 + 4))","{""ANSWER"": 14}",," Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (5 + 4 + 7 - 6) = 10
+   (-8 * 0 - 9 + 4) = (-8 * 0) - 9 + 4 = 0 - 9 + 4 = -5
+
+2. Now subtract the second result from the first:
+   10 - (-5) = 10 + 5 = 15
+
+So, the final answer is 15. In JSON format, this would be:
+
+ {""ANSWER"": 15}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((9 - 6 + -4 + -5) * (4 - -8 + -9 + 0))","{""ANSWER"": -16}",,"Let's solve the given math expression.
+
+First, let's solve the expressions inside the parentheses:
+
+(9 - 6 + -4 + -5) = 
+9 - 6 = 3
+3 + -4 = -1
+-1 + -5 = -6
+
+So, the first expression evaluates to -6.
+
+(4 - -8 + -9 + 0) = 
+4 - -8 = 12
+12 + -9 = 3
+3 + 0 = 3
+
+Now, let's multiply the two results:
+
+-6 * 3 = -18
+
+Therefore, the final answer is:
+
+{""ANSWER"": -18}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 * 6 - -3 * -3) + (-4 - -9 + 4 - -4))","{""ANSWER"": 21}",,"Let's solve the given math expression step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply -9 and 6: -9 * 6 = -54
+2. Multiply -3 and -3: -3 * -3 = 9
+3. Subtract 9 from -54: -54 - 9 = -63
+4. Subtract -4 from -63: -63 - (-4) = -63 + 4 = -59
+5. Add -4 and -9: -4 + (-9) = -13
+6. Add -59 and -13: -59 + (-13) = -72
+7. Add 4 and -4: 4 + (-4) = 0
+8. Add 0 to -72: -72 + 0 = -72
+
+So, the final result is -72.
+
+Here is the JSON response:
+
+{""ANSWER"": -72}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 * -8 - -5 * -6) * (3 + -9 - 5 - -1))","{""ANSWER"": 128}",,"Let's solve the math question step by step.
+
+1. Calculate the expressions inside the parentheses:
+   -8 * -8 = 64
+   -5 * -6 = 30
+   (3 + -9 - 5 - -1) = (3 - 9 - 5 + 1) = -10
+
+2. Now, calculate the expression outside the parentheses:
+   (64 - 30) * -10 = 34 * -10 = -340
+
+So, the answer is:
+{""ANSWER"": -340}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((0 + 3 * 4 * 9) - (4 - -5 + -4 - 4))","{""ANSWER"": 42}",,"Let's break down the math expression step by step:
+
+1. Multiply 3, 4, and 9: 3 * 4 * 9 = 108
+2. Add 0 to the result: 108 + 0 = 108
+3. Subtract 4 from the result: 108 - 4 = 104
+4. Add -5 to the result: 104 + (-5) = 104 - 5 = 99
+5. Subtract -4 from the result: 99 + 4 = 103
+6. Subtract 4 from the result: 103 - 4 = 99
+
+So, the final result is 99.
+
+Here's the JSON response:
+
+{""ANSWER"": 99}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-4 + -7 - 3 + 3) - (-3 + -2 - -3 * -3))","{""ANSWER"": -4}",,"Let's break down the expression step by step.
+
+First, evaluate the expressions inside the parentheses:
+
+(-4 + -7 - 3 + 3) = -4 - 7 - 3 + 3 = -11
+
+(-3 + -2 - -3 * -3) = -3 - 2 - 9 = -14
+
+Now, subtract the second result from the first:
+
+-11 - (-14) = -11 + 14 = 3
+
+So, the final answer is:
+
+{""ANSWER"": 3}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 * -2 * -1 + -9) - (-7 + 5 - 0 * -4))","{""ANSWER"": 35}",,"Let's break down the expression step by step:
+
+1. Multiply (-7 * -2 * -1) = 14
+2. Add (-9) to the result: 14 - 9 = 5
+3. Calculate (-7 + 5 - 0 * -4)
+   a. Subtract 7 from 5: 5 - 7 = -2
+   b. Multiply 0 by -4: 0 * -4 = 0
+   c. Add 0 to -2: -2 + 0 = -2
+4. Subtract (-2) from the result of step 2: 5 - (-2) = 5 + 2 = 7
+
+So, the final answer is:
+{""ANSWER"": 7}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-3 + 2 * -7 * 5) * (-9 - 9 - -9 + -7))","{""ANSWER"": 612}",,"Let's solve the given math expression step by step.
+
+1. Multiply 2 and -7: 2 * -7 = -14
+2. Multiply -14 and 5: -14 * 5 = -70
+3. Add -3 and -70: -3 + (-70) = -73
+4. Multiply -73 and -9: -73 * -9 = 657
+5. Add -9 and -9: -9 + (-9) = -18
+6. Add -9 and -18: -9 + (-18) = -27
+7. Add -7 and -27: -7 + (-27) = -34
+8. Multiply 657 and -34: 657 * (-34) = -22458
+
+So, the final result of the expression is -22458.
+
+Here's the answer in JSON format: {""ANSWER"": -22458}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 + 0 + 2 - 4) + (-9 + 6 * -5 + 8))","{""ANSWER"": -6}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (1 + 0 + 2 - 4) = 1 + 0 + 2 = 3, then 3 - 4 = -1
+   (-9 + 6 * -5 + 8) = -9 + 6 * -5 = -9 - 30 = -39, then -39 + 8 = -31
+
+2. Now add the results of the two expressions:
+   -1 + (-31) = -32
+
+So, the final answer is:
+
+ {""ANSWER"": -32}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-3 + -4 * 4 + -8) + (1 - -3 + 4 - -9))","{""ANSWER"": 40}",," Let's break down the math step by step:
+
+1. Multiply -4 and 4: -4 * 4 = -16
+2. Add -3, -16, and -8: -3 + (-16) + (-8) = -27
+3. Add 1, -3, 4, and -9: 1 - (-3) + 4 - (-9) = 1 + 3 + 4 + 9 = 17
+4. Add -27 and 17: -27 + 17 = -10
+
+So, the final answer is: {""ANSWER"": -10}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 * -7 * -4 * 2) + (7 - -3 - -3 * 1))","{""ANSWER"": 120}",,"Let's break down the expression step by step:
+
+1. Multiply 3 and -7: 3 * -7 = -21
+2. Multiply -21 by -4: -21 * -4 = 84
+3. Multiply 84 by 2: 84 * 2 = 168
+4. Multiply -3 by -3: -3 * -3 = 9
+5. Multiply 9 by 1: 9 * 1 = 9
+6. Add 9 to the previous result: 9 + 9 = 18
+7. Add 168 to the previous result: 168 + 18 = 186
+
+So, the final result is 186. Here is the answer in JSON format:
+
+{""ANSWER"": 186}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 * -6 + -9 - 3) + (-7 - -2 - 6 * 6))","{""ANSWER"": 25}",,"Let's break down the expression step by step.
+
+1. Multiply -5 and -6: -5 * -6 = 30
+2. Add -9 and 30: 30 + (-9) = 21
+3. Add -3 to 21: 21 + (-3) = 18
+4. Multiply 6 and 6: 6 * 6 = 36
+5. Add -7 and 36, then add -2: (-7) + 36 + (-2) = 27
+6. Add 18 and 27: 18 + 27 = 45
+
+So, the final result is 45.
+
+ {""ANSWER"": 45}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((6 - 5 + 5 + -9) - (9 + 8 * -6 * -1))","{""ANSWER"": 2}",,"Let's solve the math question step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (6 - 5 + 5 - 9) = 6 - 5 + 5 - 9 = -3
+   (9 + 8 * -6 * -1) = 9 + 8 * 6 = 9 + 48 = 57
+
+2. Now, subtract the second result from the first result:
+   -3 - 57 = -60
+
+So, the answer is:
+
+ {""ANSWER"": -60}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 * 3 - -1 - -3) * (-4 * 7 * -3 * 3))","{""ANSWER"": -1056}",," Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the innermost parentheses:
+   8 * 3 = 24
+   -1 - (-3) = -1 + 3 = 2
+
+2. Now, multiply the results from step 1:
+   24 * 2 = 48
+
+3. Evaluate the expression inside the next set of parentheses:
+   -4 * 7 = -28
+   -28 * -3 = 84
+   -28 * 3 = -84
+
+4. Now, multiply the results from steps 2 and 3:
+   48 * (-84) = -4032
+
+So, the final answer is: {""ANSWER"": -4032}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 + 3 - 6 + 1) + (-5 + 5 - 6 - 4))","{""ANSWER"": 0}",,"Let's solve the expression step by step:
+
+(5 + 3 - 6 + 1) = 
+First, add 5 and 3: 5 + 3 = 8
+Then, subtract 6: 8 - 6 = 2
+Finally, add 1: 2 + 1 = 3
+
+Now, let's solve the second part of the expression:
+(-5 + 5 - 6 - 4) = 
+First, add -5 and 5: -5 + 5 = 0
+Then, subtract 6: 0 - 6 = -6
+Finally, subtract 4: -6 - 4 = -10
+
+Now, add the two results together:
+3 + (-10) = -7
+
+So, the final answer is:
+{""ANSWER"": -7}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 + 6 + 1 - 7) * (2 - -2 + -9 + -2))","{""ANSWER"": -16}",,"Let's solve the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - (-9 + 6 + 1 - 7) = -9 + 6 + 1 - 7 = -9
+   - (2 - -2 + -9 + -2) = 2 + 2 - 9 - 2 = -7
+
+2. Now multiply the two results:
+   - (-9) * (-7) = 63
+
+So, the final answer is:
+
+ {""ANSWER"": 63}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 * 0 - -5 - 3) + (9 * 6 + -4 - 0))","{""ANSWER"": 34}",,"Let's break down the given math expression and solve it step by step.
+
+The expression is: ((1 * 0 - -5 - 3) + (9 * 6 + -4 - 0))
+
+First, calculate the expressions inside the innermost parentheses:
+
+1. 1 * 0 = 0
+2. - -5 = 5
+3. 0 + 5 + 3 = 8
+4. 9 * 6 = 54
+5. -4 - 0 = -4
+
+Now, put these results back into the expression:
+
+((8) + (54 - 4))
+
+Next, calculate the expression inside the second set of parentheses:
+
+54 - 4 = 50
+
+Now, put this result back into the expression:
+
+((8) + 50)
+
+Finally, add the two numbers:
+
+8 + 50 = 58
+
+So, the final answer is: {""ANSWER"": 58}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 - 2 + 5 * 2) + (-2 - -7 + 3 * -8))","{""ANSWER"": 16}",,"Let's break down the equation step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (1 - 2 + 5 * 2) = (1 - 2 + 10) = 9
+   (-2 - -7 + 3 * -8) = (-2 + 7 - 24) = -19
+
+2. Now, add the two results together:
+   9 + (-19) = -10
+
+So, the final answer is:
+
+{""ANSWER"": -10}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 + -7 + 1 - 5) - (-3 * -1 * 7 + -1))","{""ANSWER"": 4}",," Let's solve the equation step by step:
+
+(5 + -7 + 1 - 5) - (-3 * -1 * 7 + -1)
+
+First, let's calculate the expressions inside the parentheses:
+
+(5 + -7 + 1 - 5) = -6
+
+Now, let's calculate the second part of the equation:
+
+(-3 * -1 * 7) = 21
+
+Now, multiply by -1:
+
+21 * -1 = -21
+
+Now, add -1:
+
+-21 + -1 = -22
+
+Now, subtract -22 from -6:
+
+-6 - (-22) = -6 + 22
+
+-6 + 22 = 16
+
+So, the final answer is:
+
+ {""ANSWER"": 16}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 * -2 + -4 + -4) - (9 * 1 * -6 * 6))","{""ANSWER"": -35}",," Let's break down the expression step by step:
+
+1. Multiply -7 and -2: (-7 * -2) = 14
+2. Add -4 and -4: (-4 + -4) = -8
+3. Add 14 and -8: (14 + -8) = 6
+4. Multiply 9 and 1: (9 * 1) = 9
+5. Multiply -6 by 6: (-6 * 6) = -36
+6. Multiply 9 by -36: (9 * -36) = -324
+7. Subtract -324 from 6: (6 - -324) = 330
+
+The final answer is: {""ANSWER"": 330}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 + 0 - 3 + 0) - (-7 - 9 * 1 + -3))","{""ANSWER"": 4}",," Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (1 + 0 - 3 + 0) = -2
+   (-7 - 9 * 1 + -3) = -7 - 9 - 3 = -19
+
+2. Now, subtract the second result from the first:
+   -2 - (-19) = -2 + 19 = 17
+
+So, the final answer is:
+
+ {""ANSWER"": 17}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((7 * 6 - -2 - 7) * (4 * 5 * -3 + 2))","{""ANSWER"": -112}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (7 * 6 - -2 - 7) = (42 - (-2) - 7) = (42 + 2 - 7) = 37
+   (4 * 5 * -3 + 2) = (20 * -3 + 2) = (-60 + 2) = -58
+
+2. Now multiply the two results:
+   37 * -58 = -2156
+
+So, the final answer is:
+{""ANSWER"": -2156}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 * -9 * 3 - 7) - (-9 + 4 * 8 + 2))","{""ANSWER"": -26}",,"Let's break down the math step by step:
+
+1. Multiply 3 and -9: 3 * -9 = -27
+2. Multiply -27 by 3: -27 * 3 = -81
+3. Subtract 7 from -81: -81 - 7 = -88
+4. Multiply 4 and 8: 4 * 8 = 32
+5. Add 32, 4, and 2: 32 + 4 + 2 = 38
+6. Subtract 38 from -88: -88 - 38 = -126
+
+Now, let's put it in JSON format:
+
+{""ANSWER"": -126}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((9 + 6 - 9 + 8) * (9 - -9 * -6 + -2))","{""ANSWER"": 96}",,"Let's break down the equation step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (9 + 6 - 9 + 8) = 14
+   (9 - -9 * -6 + -2) = (9 + 9 * 6 - 2) = (9 + 54 - 2) = 61
+
+2. Now, multiply the two results:
+   14 * 61 = 854
+
+So, the final answer is:
+{""ANSWER"": 854}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 * 6 + -6 - 8) * (-5 - 6 - 5 - -4))","{""ANSWER"": -330}",,"Let's break down the given math expression step by step:
+
+1. Multiply 5 and 6: 5 * 6 = 30
+2. Add -6 to the result: 30 + -6 = 24
+3. Add -8 to the result: 24 + -8 = 16
+4. Multiply the result by -5: 16 * -5 = -80
+5. Add -6 to the result: -80 + -6 = -86
+6. Add -5 to the result: -86 + -5 = -91
+7. Add -4 to the result: -91 + -4 = -95
+
+So, the final result is -95.
+
+Here is the JSON response:
+
+{""ANSWER"": -95}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 + 4 - -1 * -1) + (-6 - -7 + -1 * 6))","{""ANSWER"": 12}",,"Let's break down the math step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - 5 + 4 - -1 * -1 = 5 + 4 + 1 = 10
+   - -6 - -7 + -1 * 6 = -6 + 7 - 6 = -5
+
+2. Add the results:
+   - 10 + (-5) = 5
+
+So, the final answer is:
+
+{""ANSWER"": 5}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((9 - 5 - 4 + -2) + (-9 + 1 - 1 - 9))","{""ANSWER"": -12}",," Let's break it down step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   - 9 - 5 - 4 + (-2) = 9 - 5 - 4 - 2 = 0
+   - (-9 + 1 - 1 - 9) = -9 + 1 - 1 - 9 = -18
+
+2. Now, add the results:
+   - 0 + (-18) = -18
+
+So, the final answer is:
+
+ {""ANSWER"": -18}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((6 - 9 * -6 - -9) + (3 * 3 + -5 * -9))","{""ANSWER"": 102}",," Let's solve the equation step by step.
+
+ ((6 - 9 * -6 - -9) + (3 * 3 + -5 * -9))
+
+= ((6 - 9 * -6 + 9) + (3 * 3 + -5 * -9))
+
+= ((6 + 54 + 9) + (9 + 45))
+
+= (69 + 54)
+
+= 123
+
+So, the answer is: {""ANSWER"": 123}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-2 * 5 + -3 + 0) * (-9 + 2 + 5 * 4))","{""ANSWER"": -70}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -2 * 5 = -10
+   -10 + -3 = -13
+   -13 + 0 = -13
+
+   (-9 + 2) = -7
+   -7 + 5 * 4 = -7 + 20 = 13
+
+2. Multiply the results:
+   -13 * 13 = -169
+
+So, the answer is:
+
+{""ANSWER"": -169}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 * -3 * 3 * 7) * (0 + -9 - -5 - -2))","{""ANSWER"": -630}",," Let's break down the given expression step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply 5 and -3: 5 * -3 = -15
+2. Multiply -15 and 3: -15 * 3 = -45
+3. Multiply -45 and 7: -45 * 7 = -315
+4. Now, let's simplify the expression inside the second parentheses: 
+   0 + -9 - -5 - -2
+   0 + -9 + 5 + 2 = -2
+5. Multiply -315 and -2: -315 * -2 = 630
+
+So, the final result is 630.
+
+Here is the JSON response:
+
+{""ANSWER"": 630}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 - 3 + 0 + 7) + (-9 * -6 * 2 - 0))","{""ANSWER"": 24}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (8 - 3 + 0 + 7) = 12
+   (-9 * -6 * 2) = 108
+
+2. Now, substitute the results back into the original expression:
+   (12) + (108 - 0)
+
+3. Evaluate the expression inside the parentheses:
+   108 - 0 = 108
+
+4. Finally, add the two results together:
+   12 + 108 = 120
+
+So, the answer is: {""ANSWER"": 120}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-2 * 9 * -8 + 8) - (0 * -4 - -6 * 4))","{""ANSWER"": 80}",,"Let's solve the given math expression step by step:
+
+1. First, we'll calculate the expressions inside the parentheses:
+   -2 * 9 * -8 = -144
+   -144 + 8 = -136
+
+   0 * -4 = 0
+   -6 * 4 = -24
+   0 - (-24) = 24
+
+2. Now, we'll subtract the result of the second expression from the first expression:
+   -136 - 24 = -160
+
+So, the result of the given expression is -160. Here's the answer in JSON format:
+
+{""ANSWER"": -160}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 * -6 * 0 - 5) * (-3 - 9 * -8 * -9))","{""ANSWER"": 0}",," Let's break down the expression step by step:
+
+1. Multiply -7 and -6: (-7 * -6) = 42
+2. Multiply 42 by 0: 42 * 0 = 0
+3. Subtract 5: 0 - 5 = -5
+4. Multiply -3 by -8: (-3 * -8) = 24
+5. Multiply 24 by -9: 24 * -9 = -216
+6. Add -216 to -3: -216 - 3 = -219
+7. Multiply -5 by -219: (-5 * -219) = 1095
+
+So, the final result is 1095.
+
+ {""ANSWER"": 1095}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 * 8 * -1 * -9) - (-2 + 2 * -8 * 8))","{""ANSWER"": 216}",,"Let's break down the given math expression:
+
+((3 * 8 * -1 * -9) - (-2 + 2 * -8 * 8))
+
+First, calculate the multiplication inside the parentheses:
+
+(3 * 8 * -1 * -9) = (3 * -8 * -1 * 9) = (24 * -1 * 9) = -216
+
+Now, calculate the multiplication inside the second parentheses:
+
+(-2 + 2 * -8 * 8) = (-2 + 2 * -64) = (-2 -128) = -130
+
+Now, subtract the second result from the first result:
+
+-216 - (-130) = -216 + 130 = -86
+
+Therefore, the final answer is:
+
+{""ANSWER"": -86}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 + 5 * 0 - -8) + (6 - -5 * -7 + -8))","{""ANSWER"": 16}",," Let's break down the given math expression step by step.
+
+1. Multiply 5 and 0: 5 * 0 = 0
+2. Add -9 and 0: -9 + 0 = -9
+3. Add -8 and -9: -9 + (-8) = -17
+4. Multiply -5 and -7: -5 * -7 = 35
+5. Subtract 35 from 6: 6 - 35 = -29
+6. Add -8 and -29: -29 + (-8) = -37
+7. Finally, add -17 and -37: -17 + (-37) = -54
+
+So, the final result is -54.
+
+Here's the JSON response:
+
+{""ANSWER"": -54}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-2 - -7 - 5 * 2) + (-3 - 5 * 3 + -7))","{""ANSWER"": -16}",," Let's break it down step by step.
+
+1. Multiply 5 and 2: 5 * 2 = 10
+2. Multiply 5 and 3: 5 * 3 = 15
+3. Subtract 2, 7, and 5, then add 10: (-2 - -7 - 5) + 10 = 0 + 10 = 10
+4. Subtract 3, 15, and 7: (-3 - 5 * 3 - 7) = (-3 - 15 - 7) = -25
+5. Add 10 and -25: 10 + (-25) = -15
+
+So, the answer is: {""ANSWER"": -15}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-9 + -7 + -1 - -1) * (3 - -7 - -1 * 0))","{""ANSWER"": -8}",,"Let's solve the math problem step by step.
+
+First, let's simplify the expressions inside the parentheses:
+
+-9 + -7 = -16
+-16 + -1 = -17
+-17 + 1 = -16
+
+So, the first expression simplifies to -16.
+
+Next, let's simplify the second expression:
+
+3 - (-7) = 3 + 7 = 10
+10 - (-1) = 10 + 1 = 11
+11 * 0 = 0
+
+So, the second expression simplifies to 0.
+
+Now, let's multiply the two simplified expressions:
+
+-16 * 0 = 0
+
+Therefore, the final answer is:
+
+{""ANSWER"": 0}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 + 6 + 9 + 3) - (-5 - 9 - -3 + 4))","{""ANSWER"": 12}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -1 + 6 + 9 + 3 = 17
+   -5 - 9 + 3 = -11
+   - (-5 - 9 - -3 + 4) = - (-5 - 9 + 3 + 4) = - (-11 + 7) = - (-4) = 4
+
+2. Now subtract the second result from the first:
+   17 - 4 = 13
+
+So, the final answer is:
+
+{""ANSWER"": 13}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 + 9 * 9 * 6) - (-2 - -5 + 9 + -7))","{""ANSWER"": 58}",," Let's solve the equation step by step.
+
+ 1. Multiply 9 and 9: 9 * 9 = 81
+ 2. Multiply 81 and 6: 81 * 6 = 486
+ 3. Add 7 to 486: 486 + 7 = 493
+ 4. Subtract -2 from -5: -5 - (-2) = -5 + 2 = -3
+ 5. Add 9 to -3: -3 + 9 = 6
+ 6. Add 7 to 6: 6 + 7 = 13
+ 7. Subtract 13 from 493: 493 - 13 = 480
+
+The solution to the equation is: {""ANSWER"": 480}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 - -7 + 0 + 3) + (-3 + 5 - -5 * -8))","{""ANSWER"": 12}",,"Let's solve the given math expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (-8 - -7 + 0 + 3) = (-8 + 7 + 0 + 3) = 2
+   (-3 + 5 - -5 * -8) = (-3 + 5 - 40) = -38
+
+2. Now, add the two results:
+   (2) + (-38) = -36
+
+So, the final answer is:
+
+{""ANSWER"": -36}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 - 4 - -8 - -7) + (6 - 5 - -1 - 4))","{""ANSWER"": 18}",," Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   (8 - 4 - -8 - -7) = (8 - 4 + 8 + 7) = 19
+   (6 - 5 - -1 - 4) = (6 - 5 + 1 - 4) = -2
+
+2. Add the results of the expressions:
+   19 + (-2) = 17
+
+So, the final answer is:
+
+ {""ANSWER"": 17}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 * 8 + -6 - -5) + (-4 - 9 * 5 - -1))","{""ANSWER"": -30}",,"Let's solve the given math expression step by step:
+
+1. Multiply -6 and 8: -6 * 8 = -48
+2. Add -6: -48 + -6 = -54
+3. Subtract -5 (which is the same as adding 5): -54 + 5 = -49
+4. Multiply 9 and 5: 9 * 5 = 45
+5. Add -4: -49 + -4 = -53
+6. Subtract 45: -53 - 45 = -98
+7. Add -1: -98 + -1 = -99
+
+The final result is -99.
+
+In JSON format:
+
+{""ANSWER"": -99}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 * -9 - 4 - 4) - (-3 * 2 * 9 + -7))","{""ANSWER"": -32}",,"Let's break down the expression step by step:
+
+1. Multiply 5 and -9: 5 * -9 = -45
+2. Subtract 4: -45 - 4 = -49
+3. Subtract 4: -49 - 4 = -53
+4. Multiply -3, 2, and 9: -3 * 2 * 9 = -54
+5. Subtract -7: -54 - (-7) = -54 + 7 = -47
+6. Subtract -53 from -47: -47 - (-53) = -47 + 53 = 6
+
+So, the final answer is:
+
+{""ANSWER"": 6}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((4 * -9 * 3 * -8) + (-9 - 4 - -9 - -7))","{""ANSWER"": 1512}",,"Let's solve the given math expression step by step.
+
+First, calculate the multiplication:
+4 * -9 = -36
+-36 * 3 = -108
+-108 * -8 = 864
+
+Next, calculate the addition:
+-9 - 4 = -13
+-13 - (-9) = -13 + 9 = -4
+-4 - (-7) = -4 + 7 = 3
+
+Now, add the results of the multiplication and addition:
+864 + 3 = 867
+
+So, the result of the given expression is 867.
+
+Here's the response in JSON format:
+
+{""ANSWER"": 867}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-7 - 2 - 0 + 2) * (-4 * -5 + -8 + 9))","{""ANSWER"": -14}",," Let's solve the expression step by step.
+
+ First, calculate the expressions inside the parentheses:
+
+ (-7 - 2 - 0 + 2) = -7 - 2 - 0 + 2 = -7
+
+ (-4 * -5 + -8 + 9) = 20 + -8 + 9 = 21
+
+ Now, multiply the results:
+
+ (-7) * 21 = -147
+
+So, the answer is -147.
+
+Here's the response in JSON format:
+
+ {""ANSWER"": -147}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 + 7 * 7 * -9) * (4 + 3 + -8 * 4))","{""ANSWER"": -1128}",," Let's solve the given math question step by step.
+
+1. First, we need to follow the order of operations (PEMDAS):
+
+   - Multiply 7 and 7: 7 * 7 = 49
+   - Multiply 49 and -9: 49 * -9 = -441
+   - Add -1 and -441: -1 + -441 = -442
+
+2. Next, we need to calculate the value inside the second parenthesis:
+
+   - Add 4 and 3: 4 + 3 = 7
+   - Multiply -8 and 4: -8 * 4 = -32
+   - Add 7 and -32: 7 + -32 = -25
+
+3. Now, we can multiply the two results:
+
+   - Multiply -442 and -25: -442 * -25 = 11050
+
+So, the final answer is:
+
+{""ANSWER"": 11050}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((7 * 8 + 1 + 3) - (3 + -1 - -9 + -6))","{""ANSWER"": 73}",,"Let's solve the math question step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Multiply 7 and 8: 7 * 8 = 56
+2. Add 1 and 3: 56 + 1 + 3 = 60
+3. Add -1, -9, and -6: -1 - 9 - 6 = -16
+4. Subtract -16 from 60: 60 - (-16) = 60 + 16 = 76
+
+So, the final answer is:
+
+{""ANSWER"": 76}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((3 + -9 + 8 + -4) * (-4 + -6 - 4 - -8))","{""ANSWER"": -16}",," Let's break down the expression step by step:
+
+(3 + -9 + 8 + -4) =?
+
+First, add the numbers inside the parentheses:
+3 + (-9) = -6
+-6 + 8 = 2
+2 + (-4) = -2
+
+So, (3 + -9 + 8 + -4) = -2
+
+Now, let's calculate the expression inside the second parentheses:
+(-4 + -6 - 4 - -8) =?
+
+First, add the numbers inside the parentheses:
+-4 + (-6) = -10
+-10 + (-4) = -14
+-14 + 8 = -6
+
+So, (-4 + -6 - 4 - -8) = -6
+
+Now, multiply the two results:
+(-2) * (-6) = 12
+
+Therefore, the answer is:
+
+{""ANSWER"": 12}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 * 5 * -8 - -2) * (-2 * 6 - -5 * 3))","{""ANSWER"": -1196}",," Let's solve the given math expression step by step.
+
+First, solve the expressions inside the innermost parentheses:
+- 1 * 5 * -8 = -40
+- -2 is already simplified.
+- -2 * 6 = -12
+- -5 * 3 = -15
+
+Now, the expression becomes:
+((-40 - (-2)) * (-12 - (-15)))
+
+Simplify the expressions inside the parentheses:
+- -40 - (-2) = -40 + 2 = -38
+- -12 - (-15) = -12 + 15 = 3
+
+Now, the expression becomes:
+(-38 * 3)
+
+Multiply -38 and 3:
+-38 * 3 = -114
+
+So, the final answer is:
+{""ANSWER"": -114}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 - -1 * -8 * -2) * (-6 + 8 + -5 * -8))","{""ANSWER"": 256}",,"Let's break down the expression step by step:
+
+1. Evaluate the expressions inside the parentheses:
+   -1 * -8 * -2 = -1 * 16 = -16
+   -6 + 8 = 2
+   -5 * -8 = 40
+
+2. Replace the expressions with their values:
+   (-8 - (-16)) * 2
+
+3. Evaluate the expressions inside the parentheses:
+   -8 - (-16) = -8 + 16 = 8
+
+4. Replace the expressions with their values:
+   8 * 2
+
+5. Multiply 8 and 2:
+   8 * 2 = 16
+
+So, the answer is:
+{""ANSWER"": 16}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((4 - -6 + -9 + -7) - (9 + -3 - -7 * -8))","{""ANSWER"": -1}",,"Let's solve the given math expression:
+
+((4 - -6 + -9 + -7) - (9 + -3 - -7 * -8))
+
+First, simplify the expressions inside the parentheses:
+
+1. (4 - -6 + -9 + -7)
+   = 4 + 6 - 9 - 7
+   = 9 - 16
+   = -7
+
+2. (9 + -3 - -7 * -8)
+   = 9 - 3 - (-7 * -8)
+   = 9 - 3 - 56
+   = 6 - 56
+   = -50
+
+Now, subtract the second result from the first result:
+
+-7 - (-50)
+= -7 + 50
+= 43
+
+So, the final answer is:
+
+{""ANSWER"": 43}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((0 * -7 - 6 * 3) * (-9 + -5 - 2 * -1))","{""ANSWER"": -84}",," Let's break it down step by step:
+
+((0 * -7 - 6 * 3) * (-9 + -5 - 2 * -1))
+
+1. Multiply 0 and -7: 0 * -7 = 0
+2. Multiply 6 and 3: 6 * 3 = 18
+3. Subtract 18 from 0: 0 - 18 = -18
+4. Multiply -9 and -5: -9 * -5 = 45
+5. Multiply 2 and -1: 2 * -1 = -2
+6. Add 45 and -2: 45 + (-2) = 43
+7. Multiply -18 and 43: (-18) * 43 = -774
+
+So, the answer is:
+{""ANSWER"": -774}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-8 * 1 * -1 + -5) + (-2 - -3 + 1 * -7))","{""ANSWER"": 14}",," Let's solve the given math expression step by step:
+
+1. Multiply -8, 1, and -1: 
+   -8 * 1 * -1 = 8
+
+2. Subtract 5 from the result:
+   8 - 5 = 3
+
+3. Calculate the expression inside the second parentheses:
+   -2 - (-3) = -2 + 3 = 1
+   1 * -7 = -7
+   1 + (-7) = -6
+
+4. Add the results of the two parentheses:
+   3 + (-6) = -3
+
+Therefore, the answer is:
+
+ {""ANSWER"": -3}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((8 - -9 * 4 * 9) * (-4 * -3 * 7 * 9))","{""ANSWER"": -144}",,"Let's solve the math question step by step.
+
+First, we need to follow the order of operations (PEMDAS):
+
+1. Calculate the expression inside the parentheses: 
+   -9 * 4 * 9 = -9 * 36 = -324
+
+2. Now, subtract -324 from 8:
+   8 - (-324) = 8 + 324 = 332
+
+3. Next, calculate the expression inside the second set of parentheses:
+   -4 * -3 * 7 * 9 = 4 * 3 * 7 * 9 = 12 * 63 = 756
+
+4. Now, multiply 332 by 756:
+   332 * 756 = 250832
+
+So, the final answer is:
+
+ {""ANSWER"": 250832}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((1 * -9 - 4 + -9) + (-1 + -6 + 9 - 5))","{""ANSWER"": -23}",,"Let's break down the given math expression and solve it step by step.
+
+The given expression is: ((1 * -9 - 4 + -9) + (-1 + -6 + 9 - 5))
+
+Step 1: Multiply 1 and -9
+1 * -9 = -9
+
+Step 2: Add -4 and -9 to -9
+-9 + (-4) + (-9) = -9 - 4 - 9 = -22
+
+Step 3: Add -1, -6, 9, and -5
+-1 + (-6) + 9 + (-5) = -1 - 6 + 9 - 5 = -3
+
+Step 4: Add the results of step 2 and step 3
+-22 + (-3) = -22 - 3 = -25
+
+Therefore, the final answer is: {""ANSWER"": -25}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-1 + 2 - 9 + 0) * (0 - -2 + -6 - 2))","{""ANSWER"": -20}",,"Let's solve the given math question step by step.
+
+First, we need to solve the expressions inside the parentheses:
+
+1. (-1 + 2 - 9 + 0) 
+   = (-8 + 0) 
+   = -8
+
+2. (0 - -2 + -6 - 2) 
+   = (0 + 2 - 6 - 2) 
+   = -6
+
+Now, multiply the two results:
+
+(-8) * (-6) 
+= 48
+
+So, the answer in JSON format is:
+{""ANSWER"": 48}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((7 * -5 * -9 + 7) - (2 + -8 * 6 * 3))","{""ANSWER"": 224}",,"Let's break down the given math expression step by step:
+
+1. Multiply 7 and -5: 7 * -5 = -35
+2. Multiply -35 and -9: -35 * -9 = 315
+3. Add 7 to 315: 315 + 7 = 322
+4. Multiply -8 and 6: -8 * 6 = -48
+5. Multiply -48 and 3: -48 * 3 = -144
+6. Add 2 to -144: 2 + (-144) = -142
+7. Subtract -142 from 322: 322 - (-142) = 322 + 142 = 464
+
+So, the final result is 464.
+
+Here's the answer in JSON format:
+
+{""ANSWER"": 464}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-5 + -8 - -6 * 7) + (9 * -7 - -5 - -4))","{""ANSWER"": -3}",," Let's break down the expression step by step:
+
+1. Multiply -6 and 7: -6 * 7 = -42
+2. Add -5 and -8: -5 + -8 = -13
+3. Add -42 to -13: -13 + (-42) = -55
+4. Multiply 9 and -7: 9 * -7 = -63
+5. Add -5 and -4: -5 + (-4) = -9
+6. Add -63 to -9: -63 + (-9) = -72
+7. Add -55 to -72: -55 + (-72) = -127
+
+So, the final result is -127.
+
+Here's the JSON response:
+
+{""ANSWER"": -127}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((-6 * 9 - -5 + 8) * (-8 * -6 - -1 * 0))","{""ANSWER"": 720}",," Let's solve the expression step by step:
+
+((-6 * 9 - -5 + 8) * (-8 * -6 - -1 * 0))
+
+= ((-54 + 5 + 8) * (-8 * -6 - 0))
+= ((-54 + 13) * (-8 * -6))
+= ((-41) * (48))
+= -41 * 48
+= -1972
+
+So, the answer is:
+{""ANSWER"": -1972}",,2025-05-10 22:38:42
+"Answer below math question. Your response should be a JSON: {""ANSWER"": $INTEGER}. 
+((5 - -2 * 7 + -2) - (0 * 9 * -6 - -7))","{""ANSWER"": 21}",," Let's break down the equation step by step:
+
+1. Calculate the multiplication: -2 * 7 = -14
+2. Calculate the subtraction: 5 - (-14) = 5 + 14 = 19
+3. Calculate the addition: 19 + (-2) = 19 - 2 = 17
+4. Calculate the multiplication: 0 * 9 * -6 = 0 (since any number multiplied by 0 is 0)
+5. Calculate the subtraction: 0 - (-7) = 0 + 7 = 7
+6. Calculate the final subtraction: 17 - 7 = 10
+
+So, the answer is: {""ANSWER"": 10}",,2025-05-10 22:38:42

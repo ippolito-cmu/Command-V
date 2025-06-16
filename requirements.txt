@@ -1,0 +1,15 @@
+torch
+transformers
+safetensors
+datasets
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+tqdm
+fire
+requests
+pyprojroot
+pyyaml
+nnsight

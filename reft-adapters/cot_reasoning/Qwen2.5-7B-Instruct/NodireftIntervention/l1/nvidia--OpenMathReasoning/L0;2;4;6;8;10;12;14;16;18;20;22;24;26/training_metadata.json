@@ -1,0 +1,53 @@
+{
+  "model_name": "Qwen/Qwen2.5-7B-Instruct",
+  "dataset_name": "nvidia/OpenMathReasoning",
+  "intervention_type": "NodireftIntervention",
+  "layers": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26
+  ],
+  "lora_dim": 8,
+  "epochs": 6.0,
+  "learning_rate": 0.0009,
+  "batch_size": 4,
+  "max_examples": -1,
+  "positions": "l1",
+  "warmup_ratio": 0.1,
+  "share_weight": false,
+  "dropout": 0.05,
+  "weight_decay": 0.0,
+  "training_start": "2025-05-09 15:13:16",
+  "training_end": "2025-05-09 15:34:52",
+  "training_duration_seconds": 1295.9084718227386,
+  "training_duration_formatted": "0h 21m 35.91s",
+  "device": "cuda",
+  "total_steps": 3000,
+  "step_timestamps": {
+    "50": 1746803618.9737575,
+    "100": 1746803646.8797693,
+    "200": 1746803695.6539268,
+    "400": 1746803786.2639859,
+    "800": 1746803960.6770513,
+    "1600": 1746804301.4824386
+  },
+  "checkpoint_durations": {
+    "50": 22.32151770591736,
+    "100": 50.227529525756836,
+    "200": 99.00168704986572,
+    "400": 189.61174607276917,
+    "800": 364.02481150627136,
+    "1600": 704.830198764801
+  }
+}

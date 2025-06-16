@@ -1,0 +1,429 @@
+import json
+import os
+import shutil
+import sys
+import time
+from collections import defaultdict
+from datetime import datetime
+from typing import Literal, List
+
+import fire
+import pyreft
+import torch
+import transformers
+from datasets import load_dataset
+from pyprojroot import here
+from pyreft import parse_positions
+from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, enable_full_determinism
+from transformers.trainer_callback import TrainerCallback, TrainerState, TrainerControl
+
+sys.path.append(str(here()))
+from lib.path_manager import get_reft_folder, get_allenai_wildjailbreak_folder
+import lib.inference.custom_reft.reft_utils
+from lib import guess_instruct_model_name, get_device
+from lib.data_processing import apply_chat_template
+
+
+def save_training_metadata(save_dir, metadata):
+    """
+    Save training metadata to a JSON file in the specified directory.
+
+    Args:
+        save_dir (str): Directory where metadata will be saved
+        metadata (dict): Dictionary containing metadata to save
+    """
+    os.makedirs(save_dir, exist_ok=True)
+
+    metadata_file = os.path.join(save_dir, "training_metadata.json")
+
+    with open(metadata_file, 'w') as f:
+        json.dump(metadata, f, indent=2)
+
+    print(f"Training metadata saved to: {metadata_file}")
+
+
+def filter_wildjailbreak_dataset(ds):
+    harmful_examples = []
+    benign_examples = []
+    result = []
+
+    # First, collect all eligible examples into separate lists
+    for x in ds["train"]:
+        if 'adversarial' in x and x['adversarial'] is not None and len(
+                f"{x['adversarial']} {x['completion']}".split()) < 512:
+            if x['data_type'] == 'adversarial_harmful':
+                harmful_examples.append([x['adversarial'], x['completion']])
+            elif x['data_type'] == 'adversarial_benign':
+                benign_examples.append([x['adversarial'], x['completion']])
+
+    # Determine how many pairs we can create (limited by the smaller list)
+    max_pairs = min(len(benign_examples), len(harmful_examples))
+
+    # Create intertwined pattern for balanced truncating: benign, harmful, benign, harmful, ...
+    for i in range(max_pairs):
+        result.append(benign_examples[i])
+        result.append(harmful_examples[i])
+
+    return result
+
+
+# Define allowed intervention types and datasets for better type hinting and validation
+InterventionType = Literal["LoreftIntervention", "NodireftIntervention"]
+DatasetName = Literal[
+    "GAIR/lima", "ChristianAzinn/json-training", "isaiahbjork/chain-of-thought", 'zwhe99/commonsense_170k', 'walledai/AdvBench', 'allenai/wildjailbreak']
+dataset_processors = defaultdict(lambda: (lambda ds: [[x['instruction'], x['output']] for x in ds]), {
+    "GAIR/lima": lambda ds: [x[:2] for x in ds["train"]["conversations"]],
+    "ChristianAzinn/json-training": lambda ds: [[x['query'], x['response']] for x in ds["train"]],
+    "isaiahbjork/chain-of-thought": lambda ds: [
+        [x['prompt'],
+         x['response'][x['response'].find("<step_by_step>"):x['response'].find("</step_by_step>") + 15]
+         + " " + x['response'][x['response'].find("<output>"):]]
+        for x in ds["train"]
+    ],
+    'zwhe99/commonsense_170k': lambda ds: [[x['instruction'], x['output']] for x in ds["train"]],
+    'walledai/AdvBench': lambda ds: [[x['prompt'], x['target']] for x in ds["train"]],
+    'allenai/wildjailbreak': filter_wildjailbreak_dataset,
+})
+nonstop_ds = defaultdict(lambda: False, {'walledai/AdvBench': True})
+
+
+class StepCheckpointCallback(TrainerCallback):
+    def __init__(self, save_dir, reft_model, trainer, tokenizer, save_to_hub=False, base_interval=500, device = get_device()):
+        self.save_dir = save_dir
+        self.reft_model = reft_model
+        self.trainer = trainer
+        self.tokenizer = tokenizer
+        self.save_to_hub = save_to_hub
+        self.base_interval = base_interval
+        self.next_save_step = base_interval
+        self.device = device
+        # Create a list of checkpoints using exponential growth
+        self.checkpoint_steps = []
+        step = base_interval
+        while len(self.checkpoint_steps) <= 20:  # Some reasonable upper limit
+            self.checkpoint_steps.append(step)
+            step *= 2
+
+    def on_step_end(self, args: TrainingArguments, state: TrainerState, control: TrainerControl, **kwargs):
+        if state.global_step in self.checkpoint_steps:
+            # Save a copy of the model at this step
+            step_suffix = f"step_{state.global_step}"
+            checkpoint_dir = os.path.join(self.save_dir, step_suffix)
+            os.makedirs(checkpoint_dir, exist_ok=True)
+
+            self.reft_model.set_device("cpu")
+            self.reft_model.save(save_directory=checkpoint_dir, save_to_hf_hub=self.save_to_hub)
+            trainer_dir = os.path.join(checkpoint_dir, "trainer")
+            self.trainer.save_model(trainer_dir)
+            self.reft_model.set_device(self.device)
+
+            print(f"Model saved at step {state.global_step} to {checkpoint_dir}")
+
+        return control
+
+
+def save_script_and_args(save_dir):
+    """
+    Save a copy of the current script and command line arguments to the specified directory.
+
+    Args:
+        save_dir (str): Directory where script and args will be saved
+    """
+    os.makedirs(save_dir, exist_ok=True)
+
+    current_script = os.path.abspath(sys.argv[0])
+    script_name = os.path.basename(current_script)
+    script_copy_name = f"{script_name}.bak"
+    script_copy_path = os.path.join(save_dir, script_copy_name)
+
+    shutil.copy2(current_script, script_copy_path)
+    print(f"Script saved to: {script_copy_path}")
+
+    args_file_name = f"_backup_args.txt"
+    args_file_path = os.path.join(save_dir, args_file_name)
+
+    with open(args_file_path, 'w') as f:
+        f.write(' '.join(sys.argv[1:]))
+
+    print(f"Command line arguments saved to: {args_file_path}")
+
+
+class ReFTTrainer:
+    """A class to encapsulate ReFT training and inference."""
+
+    def __init__(self, model_name: str, model_max_length=512):
+        self.model_name = model_name
+        self.device = get_device()
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            self.model_name, use_fast=False, padding_side="right", model_max_length=model_max_length,
+        )
+        self.tokenizer.pad_token = self.tokenizer.eos_token
+        self.chat_tokenizer = AutoTokenizer.from_pretrained(guess_instruct_model_name(self.model_name), use_fast=False,
+                                                            padding_side="right", model_max_length=model_max_length, )
+        self.chat_tokenizer.pad_token = self.chat_tokenizer.eos_token
+        self.model = AutoModelForCausalLM.from_pretrained(
+            self.model_name, torch_dtype=torch.bfloat16, device_map=self.device
+        )
+
+    def _prepare_data(self, dataset_name: DatasetName, max_examples: int, positions, reft_model, share_weight):
+        """Loads and preprocesses the dataset."""
+
+        nonstop = nonstop_ds[dataset_name]
+
+        if dataset_name not in dataset_processors:
+            print(
+                f"Using default processing for: {dataset_name}.  or choose from {list(dataset_processors.keys())}")
+        if dataset_name == "allenai/wildjailbreak":
+            # load_dataset() gives error.
+            conversations = json.load(open(get_allenai_wildjailbreak_folder() / "train.json"))
+        else:
+            dataset = load_dataset(dataset_name)
+            get_conversations = dataset_processors[dataset_name]
+            conversations = get_conversations(dataset)
+        if max_examples != -1:
+            conversations = conversations[:max_examples]
+        prompts, responses = zip(*conversations)
+        templated_prompts = apply_chat_template(prompts, self.chat_tokenizer)
+        if positions is None:
+            return pyreft.make_last_position_supervised_data_module(
+                self.chat_tokenizer, self.model, templated_prompts, responses, nonstop=nonstop
+            )
+        else:
+            return pyreft.make_multiple_position_supervised_data_module(
+                self.chat_tokenizer, self.model, templated_prompts, responses, positions=positions,
+                num_interventions=len(reft_model.config.representations), share_weights=share_weight, nonstop=nonstop
+            )
+
+    def _get_reft_model(self, layers: List[int], lora_dim: int, intervention_type: InterventionType, positions: str,
+                        share_weight: bool, **kwargs):
+        """Creates and returns the ReFT model."""
+
+        intervention_classes = {
+            "LoreftIntervention": pyreft.LoreftIntervention,
+            "NodireftIntervention": pyreft.NodireftIntervention,
+        }
+
+        if intervention_type not in intervention_classes:
+            raise ValueError(
+                f"Invalid intervention type: {intervention_type}. Choose from {list(intervention_classes.keys())}")
+
+        InterventionClass = intervention_classes[intervention_type]
+
+        intervention_kwargs = {
+            "embed_dim": self.model.config.hidden_size,
+            "low_rank_dimension": lora_dim,
+            **kwargs
+        }
+        if "NodireftIntervention" == intervention_type:
+            intervention_kwargs['add_bias'] = True
+
+        reft_config = pyreft.ReftConfig(
+            representations=[{
+                "layer": layer,
+                "component": "block_output",
+                "low_rank_dimension": lora_dim,
+                "intervention": InterventionClass(**intervention_kwargs),
+            } for layer in (
+                layers if (share_weight or positions is None or min(*parse_positions(positions)) == 0) else layers * 2)]
+        )
+        print("reft_config", len(reft_config.representations))
+        reft_model = pyreft.get_reft_model(self.model, reft_config)
+        reft_model.set_device(self.device)
+        reft_model.print_trainable_parameters()
+        return reft_model
+
+    def train(
+            self,
+            dataset_name: DatasetName,
+            intervention_type: InterventionType = "NodireftIntervention",
+            layers: List[int] = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26],
+            # layers: List[int] = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26],
+            lora_dim: int = 8,
+            epochs: float = 6.0,
+            lr: float = 9e-4,
+            batch_size: int = 2,
+            max_examples: int = -1,
+            output_dir: str = "./",
+            save_to_hub: bool = False,
+            positions: str = "l1",  # "f1+l1" or "f5+l5" etc or None for last
+            warmup_ratio: float = 0.1,
+            share_weight: bool = False,
+            dropout: float = 0.05,
+            weight_decay: float = 0.0,
+            save_only_increment=False,
+            save_increment_epochs=True,
+            save_steps_base_interval=500,
+    ):
+        """Trains a ReFT model."""
+        enable_full_determinism(42)
+
+        if isinstance(layers, int):
+            layers = [layers]
+        positions_str = positions if positions is not None else "last"
+        save_dir = get_reft_folder(model_name=self.model_name, dataset_name=dataset_name,
+                                   intervention_type=intervention_type, layers=layers, reft_base_dir=output_dir,
+                                   positions_str=positions_str)
+        save_script_and_args(save_dir)
+        # Check if content already exists in save_dir
+        if os.path.exists(save_dir) and os.listdir(save_dir) and positions is None:
+            print(f"Content already exists in {save_dir}")
+            return save_dir
+        reft_model = self._get_reft_model(layers, lora_dim, intervention_type, positions, share_weight, dropout=dropout)
+        data_module = self._prepare_data(dataset_name, max_examples, positions, reft_model, share_weight)
+
+        trainer = pyreft.ReftTrainerForCausalLM(
+            model=reft_model,
+            tokenizer=self.chat_tokenizer,
+            args=transformers.TrainingArguments(
+                num_train_epochs=epochs,
+                per_device_train_batch_size=batch_size,
+                learning_rate=lr,
+                logging_steps=40,
+                report_to=[],
+                warmup_ratio=warmup_ratio,
+                lr_scheduler_type='linear',
+                weight_decay=weight_decay,
+                output_dir=output_dir + ".tmp",
+            ),
+            **data_module,
+        )
+        if save_increment_epochs or save_only_increment:
+            step_callback = StepCheckpointCallback(
+                save_dir=save_dir,
+                reft_model=reft_model,
+                trainer=trainer,
+                tokenizer=self.chat_tokenizer,
+                save_to_hub=save_to_hub,
+                base_interval=save_steps_base_interval,
+                device=self.device
+            )
+            trainer.add_callback(step_callback)
+
+        start_time = time.time()
+
+        # Start training
+        print(f"Starting training at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        trainer.train()
+
+        # Record end time and calculate duration
+        end_time = time.time()
+        training_duration = end_time - start_time
+
+        # Prepare metadata
+        metadata = {
+            "model_name": self.model_name,
+            "dataset_name": dataset_name,
+            "intervention_type": intervention_type,
+            "layers": layers,
+            "lora_dim": lora_dim,
+            "epochs": epochs,
+            "learning_rate": lr,
+            "batch_size": batch_size,
+            "max_examples": max_examples,
+            "positions": positions,
+            "warmup_ratio": warmup_ratio,
+            "share_weight": share_weight,
+            "dropout": dropout,
+            "weight_decay": weight_decay,
+            "training_start": datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S'),
+            "training_end": datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S'),
+            "training_duration_seconds": training_duration,
+            "training_duration_formatted": f"{training_duration // 3600:.0f}h {(training_duration % 3600) // 60:.0f}m {training_duration % 60:.2f}s",
+            "device": str(self.device)
+        }
+
+        # Save metadata
+        save_training_metadata(save_dir, metadata)
+
+        reft_model.set_device("cpu")
+
+        reft_model.save(save_directory=save_dir, save_to_hf_hub=save_to_hub)
+        trainer.save_model(save_dir + "/trainer")
+
+        return save_dir
+
+    def inference(self, reft_dir: str, instruction: str, max_tokens: int = 512, position=None):
+        """Runs inference with a trained ReFT model."""
+
+        reft_model = pyreft.ReftModel.load(reft_dir, self.model)
+
+        prompt_text = apply_chat_template([instruction], self.chat_tokenizer)[0]
+        prompt = self.chat_tokenizer(prompt_text, return_tensors="pt").to(self.device)
+
+        _, response = reft_model.generate(
+            prompt,
+            unit_locations=lib.inference.custom_reft.reft_utils
+            .get_unit_locations(prompt["input_ids"].shape, reft_model=reft_model, position=position),
+            intervene_on_prompt=True,
+            max_new_tokens=max_tokens,
+            do_sample=True,
+            eos_token_id=self.chat_tokenizer.eos_token_id,
+            early_stopping=True,
+        )
+        print(self.chat_tokenizer.decode(response[0], skip_special_tokens=True))
+
+
+def main():
+    fire.Fire(ReFTTrainer)
+
+
+if __name__ == "__main__":
+    main()
+
+# #!/bin/bash
+# # Bash script to run REFT training experiments with various configurations
+#
+# # Set common parameters
+# OUTPUT_DIR="./reft_to_share"
+# MAX_EXAMPLES=2000
+#
+# # Define arrays for models, datasets, and intervention types
+# MODELS=(
+#   "meta-llama/Llama-3.2-3B"
+#   "meta-llama/Llama-3.2-3B-Instruct"
+#   "meta-llama/Llama-3.2-1B"
+#   "meta-llama/Llama-3.2-1B-Instruct"
+# )
+#
+# DATASETS=(
+#   "GAIR/lima"
+#   "isaiahbjork/chain-of-thought"
+#   "ChristianAzinn/json-training"
+# )
+#
+# INTERVENTIONS=(
+#   "LoreftIntervention"
+#   "NodireftIntervention"
+# )
+#
+# # Define position options
+# POSITIONS=("f5+l5" "")
+#
+# # Loop through all combinations
+# for intervention in "${INTERVENTIONS[@]}"; do
+#   for model in "${MODELS[@]}"; do
+#     # Set LAYERS based on the model size
+#     if [[ "$model" == *"1B"* ]]; then
+#       LAYERS_OPTIONS=("10" "4,8,12")
+#     else
+#       LAYERS_OPTIONS=("10" "8,16,24")
+#     fi
+#     for dataset in "${DATASETS[@]}"; do
+#       for LAYERS in "${LAYERS_OPTIONS[@]}"; do
+#         for position in "${POSITIONS[@]}"; do
+#           # Build the position parameter part of the command
+#           position_param=""
+#           if [ -n "$position" ]; then
+#             position_param="--positions \"$position\""
+#           fi
+#
+#           # Construct and run the command
+#           cmd="python reft_trainer_custom.py train --model_name=\"$model\" --dataset_name=\"$dataset\" --layers=$LAYERS --output_dir=\"$OUTPUT_DIR\" --max_examples=$MAX_EXAMPLES --intervention_type $intervention $position_param"
+#
+#           echo "Running: $cmd"
+#           eval $cmd
+#         done
+#       done
+#     done
+#   done
+# done
