@@ -1,7 +1,7 @@
 # Command-V: Pasting LLM Behaviors via Activation Profiles
 
-⌘V enables **zero-shot behavioral transfer** across language model architectures using activation profiles. 
-Transfer jailbreaking, anti-jailbreaking and reasoning behaviors across different models with little data and no backpropagation.
+**⌘V** enables **zero-training behavioral transfer across LLM architectures** using activation profiles. 
+Transfer jailbreaking, anti-jailbreaking and reasoning behaviors across different models with **little data and no backpropagation**.
 
 ![PDF Page 1](commandv/Overview.png)
 
@@ -16,7 +16,7 @@ Transfer jailbreaking, anti-jailbreaking and reasoning behaviors across differen
 ## 🪧 Demo
 
 Check out the complete pipeline ([./command_v_demo.ipynb](https://github.com/GithuBarry/Command-V/blob/main/command_v_demo.ipynb)) or on Colab:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GithuBarry/Command-V/blob/main/command_v_demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GithuBarry/Command-V/blob/main/command_v_demo.ipynb) 
 
 
 ## 🎯 Quick Start
