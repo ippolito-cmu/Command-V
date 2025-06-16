@@ -1,10 +1,7 @@
 # Command-V: Pasting LLM Behaviors via Activation Profiles
 
-**Clean Implementation** of the paper: *Command-V: Pasting LLM Behaviors via Activation Profiles*
-
-
-Command-V (⌘V) enables **zero-shot behavioral transfer** between language models using activation profiles. Transfer
-safety behaviors, reasoning patterns, or writing styles across different model families without fine-tuning.
+Command-V (⌘V) enables **zero-shot behavioral transfer** across language model architectures using activation profiles. 
+Transfer jailbreaking, anti-jailbreaking and reasoning behaviors across different models with little data and no backpropagation.
 
 ![PDF Page 1](commandv/Overview.png)
 
