@@ -40,6 +40,7 @@ python step1_capture_activations.py --models meta-llama/Llama-3.2-1B-Instruct me
 ```
 ```bash
 # Learn activation space mappings (takes seconds)
+# (Mappings are created on the fly in practice, making this step optional.)
 python step2_derive_converters.py derive \
   --source-model meta-llama/Llama-3.1-8B-Instruct \
   --target-model meta-llama/Llama-3.2-1B-Instruct
@@ -53,18 +54,6 @@ python step3_commandv_inference.py \
   --input-source prompts/AdvBench/test.txt \
   --first-n 5 --print-output-only
 ```
-
-## 🧠 How ⌘V Works
-
-Command-V transfers the **effect** of interventions across models:
-
-1. **Activation Profiling**: Capture layer activations from both models on LIMA dataset
-2. **Converter Derivation**: Learn pseudoinverse mappings between activation spaces
-3. **Behavioral Transfer**:
-    - Convert recipient activations to donor space: `h_D = h_R @ C_{R→D}`
-    - Apply donor intervention: `h_D' = I^{l_D}(h_D)`
-    - Convert back: `Δh = (h_D' - h_D) @ C_{D→R}`
-    - Apply to recipient: `h_R = h_R + Δh`
 
 ## 📁 Project Structure
 
