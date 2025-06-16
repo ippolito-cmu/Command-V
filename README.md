@@ -18,7 +18,7 @@ safety behaviors, reasoning patterns, or writing styles across different model f
 
 ## 🪧 Demo
 
-Check out the complete pipeline ([./command_v_demo.ipynb](https://github.com/GithuBarry/activation-profiling/blob/main/command_v_demo.ipynb)) or on Colab:
+Check out the complete pipeline ([./command_v_demo.ipynb](https://github.com/GithuBarry/Command-V/blob/main/command_v_demo.ipynb)) or on Colab:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GithuBarry/Command-V/blob/main/command_v_demo.ipynb)
 
 
