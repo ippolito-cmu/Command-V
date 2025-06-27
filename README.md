@@ -1,7 +1,7 @@
 # Command-V: Pasting LLM Behaviors via Activation Profiles 
 [![arXiv](https://img.shields.io/badge/arXiv-Preprint%20available-red.svg)](https://arxiv.org/abs/2506.19140)
 
-**Finetune once, use on many LLMs.** ⌘V is the first to demonstrate that you can transfer a finetuned adapter (for refusal suppression, jailbreaking resistance, chain-of-thought reasoning, etc.) learned by one LLM to another with a different size or architecture, without backpropagation.
+**Finetune once, use on many LLMs.** ⌘V is the first to demonstrate that you can "copy-paste" a finetuned adapter (for refusal suppression, jailbreaking resistance, chain-of-thought reasoning, etc.) learned by one LLM to another of a different size or architecture, without backpropagation.
 
 ![PDF Page 1](commandv/Overview.png)
 ### How it works
@@ -10,7 +10,7 @@
 2. **Create converters** that map between model representation spaces
 3. **Transfer behaviors** by applying the donor model's learned interventions to the recipient
 
-
+See details in our [paper](https://www.arxiv.org/abs/2506.19140).
 
 ## ⌘V Highlights
 
