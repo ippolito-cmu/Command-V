@@ -1,10 +1,11 @@
 # Command-V: Pasting LLM Behaviors via Activation Profiles 
 [![arXiv](https://img.shields.io/badge/arXiv-Preprint%20available-red.svg)](https://arxiv.org/abs/2506.19140)
 
-**⌘V** lets you take an adapter (for behaviors like refusal suppression, jailbreaking resistance, or chain-of-thought reasoning) learned by one LLM and transfer it to one  with completely different size or architecture—no backpropagation required.
+**Finetune once, use on many LLMs.** ⌘V is the first to demonstrate that you can transfer a finetuned adapter (for refusal suppression, jailbreaking resistance, chain-of-thought reasoning, etc.) learned by one LLM to another with a different size or architecture, without backpropagation.
 
 ![PDF Page 1](commandv/Overview.png)
-### How it works:
+### How it works
+⌘V leverages the fact that all transformers LLM activations (intermediate representations) can be intervened for behaviors using PEFT and approximated from another LLM. So to get it running:
 1. **Profile activations** on both models using a small set of prompts
 2. **Create converters** that map between model representation spaces
 3. **Transfer behaviors** by applying the donor model's learned interventions to the recipient
