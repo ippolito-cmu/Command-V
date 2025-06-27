@@ -1,7 +1,7 @@
 # Command-V: Pasting LLM Behaviors via Activation Profiles 
 [![arXiv](https://img.shields.io/badge/arXiv-Preprint%20available-red.svg)](https://arxiv.org/abs/2506.19140)
 
-**⌘V** lets you take a behavior (like refusal suppression, jailbreaking resistance, or chain-of-thought reasoning) learned by one LLM and transfer it to one  with completely different size or architecture—no backpropagation required.
+**⌘V** lets you take an adapter (for behaviors like refusal suppression, jailbreaking resistance, or chain-of-thought reasoning) learned by one LLM and transfer it to one  with completely different size or architecture—no backpropagation required.
 
 ![PDF Page 1](commandv/Overview.png)
 ### How it works:
